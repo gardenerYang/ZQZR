@@ -1,0 +1,75 @@
+//
+//  PrefixHeader.pch
+//  ZQZX
+//
+//  Created by 中企 on 2018/10/10.
+//  Copyright © 2018年 ZhangHaoHao. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIViewController+Navigation.h"
+#import "UIColor+Util.h"
+#import "UIFont+Util.h"
+#import <MJExtension/MJExtension.h>
+#import <Masonry/Masonry.h>
+#import "UIButton+Util.h"
+#import "UIViewController+Util.h"
+#import "UIViewController+DismissKeyboard.h"
+#import "IQKeyboardManager.h"
+#import <MJRefresh/MJRefresh.h>
+#import "HttpRequest.h"
+#import "RequestedURL.h"
+#import <MBProgressHUD_JDragon/MBProgressHUD+JDragon.h>
+#import "UIImageView+WebCache.h"
+#import "UIImageView+SD.h"
+#import "NSString+Validation.h"
+#import "UIView+Extension.h"
+#import "AppUserProfile.h"
+#import "YSSafeFramework.h"
+#define IphoneHight [[UIScreen mainScreen] bounds].size.height
+#define Iphonewidth [[UIScreen mainScreen] bounds].size.width
+#define loginsLeftSpacing  Iphonewidth == 320 ? 10 : 40
+#define loginsRightSpacing  Iphonewidth == 320 ? -10 : -40
+#define StatusBarHight [UIApplication sharedApplication].statusBarFrame.size.height
+#define TabBarHeight self.tabBarController.tabBar.frame.size.height
+#define NavHeight self.navigationController.navigationBar.frame.size.height
+
+#define ZHMainType @"maintype"
+#define goToLoginState @"goToLoginState"
+#define Loginback @"Loginback"
+#define placehold kImageNamed(@"newWload")
+#define kColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define kScaleWidth(width) (width)*(kHeight/667)
+#define kScaleHeight(height) (height)*(kWidth/375)
+#define kImageNamed(image) [UIImage imageNamed:image]
+#define kURL(url)         [NSURL URLWithString:url]
+#define kFont(s)     [UIFont fontWithName:@"ArialMT" size:s]
+#define WeakSelf(weakSelf) __weak __typeof(&*self) weakSelf = self;
+#define StrongSelf(strongSelf) __strong __typeof(&*self) strongSelf = weakSelf;
+#define kWidth  [UIScreen mainScreen].bounds.size.width
+#define kHeight [UIScreen mainScreen].bounds.size.height
+#define kWindow [UIApplication sharedApplication].keyWindow
+#define kBottomViewHeight      ([[UIApplication sharedApplication] statusBarFrame].size.height>20?80:60)
+#define kStauBarHeiht [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kCurrentVC [[QYBaseViewController new] getCurrentVC].view
+#define kWindow [UIApplication sharedApplication].keyWindow
+#define kLineColor        [UIColor colorWithRed:237/255.0 green:237/255.0 blue:237/255.0 alpha:1]
+#define kTabBGColor       [UIColor colorWithRed:244/255.0 green:245/255.0 blue:246/255.0 alpha:1]
+#define kTitleColor       [UIColor withHexStr:@"333333"]
+#define kSubtitleColor    [UIColor withHexStr:@"666666"]
+#define kUnSelected       [UIColor withHexStr:@"999999"]
+
+#define kOrangeColor      [UIColor withHexStr:@"F18C09"]
+
+
+#endif
+
+#endif /* PrefixHeader_pch */

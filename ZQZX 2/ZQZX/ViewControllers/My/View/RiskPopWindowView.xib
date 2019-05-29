@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="RiskPopWindowView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="风险揭示书" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttK-K9-Ze8">
+                    <rect key="frame" x="144" y="20" width="87" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Onn-cR-iAc">
+                    <rect key="frame" x="12" y="61" width="351" height="0.5"/>
+                    <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="CbB-T1-MF6"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98P-DA-Gxp">
+                    <rect key="frame" x="12" y="61.5" width="351" height="561.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <mutableString key="text"> 
+尊敬的投资者：
+
+投资有风险，当您认购或申购本基金的基金份额时，可能获得投资收益，但同时也面临着投资风险。您在作出投资决策之前，请仔细阅读本风险揭示书和基金合同，全面认识本基金的风险收益特征和产品特性，认真考虑基金存在的各项风险因素，并充分考虑自身的风险承受能力，理性判断市场，谨慎做出投资决策。
+根据有关法律法规，基金管理人特作出如下风险揭示：
+（一）基金管理人依照恪尽职守、诚实信用、谨慎勤勉的原则管理和运用本基金财产，但不保证基金财产本金不受损失，也不保证一定盈利及最低收益。
+（二）投资者在认购本基金之前，请仔细阅读基金合同，全而认识本基金的风险收益特征和产品特性，并充分考虑自身的风险承受能力，理性判断市场，谨慎做出投资决策。
+（三）基金管理人依据基金合同约定管理和运用基金财产所产生的风险，由基金财产及投资者承担。本基金主要包括市场风险（包括股票投资风险和债券投资风险）、基金管理人的管理风险、证券市场流动性不足带来的流动性风险、基
+金交易对手方发生交易违约带来的信用风险、特定的投资方法及基金财产所投资的特定投资对象可能引起的特定风险、基金相关当事人在业务各环节的操作或技术风险、相关机构的经营风险（包括基金管理人经营风险、基金托管人经营风险）、基金本身面临的风险（包括法律及违约风险、购买力风险、管理人不能承诺基金利益风险、基金终止的风险、止损风险（如有））、关联交易风险（如有）、净值波动风险（如有）及其他风险。具体风险描述请仔细阅读基金合同第十九条“风险揭示”相关内容。
+（四）本基金只在合同规定的特定时间对基金份额持有人开放申购和赎回，因此本基金存在流动性风险。
+（五）本基金的成立需符合相关法律法规、基金合同等的规定，本基金可能存在不能满足成立条件从而无法成立的风险。
+（六）投资者知晓基金管理人或其关联方管理的其他投资产品与木基金在投资范围上可能存在重叠或交叉，基金管理人并不保证本基金投资的产品在投资收
+益或投资风险方面会优于基金管理人及其关联方管理的、投资范围与本基金存在重叠和交叉的其他投资产品。基金管理人或其关联方管理的其他投资产品未出现投资损失或投资收益未达预期的情况，并不意味着本基金不会出现投资损失或投资收益未达预期的情况。基金份额持有人不得因本基金投资收益劣于基金管理人及其关联方管理的其他类似投资产品，而向基金管理人提出任何损失或损害补偿的要求。
+（七）基金管理人在法律法规及基金合同规定的范围内履行义务，并为投资者提供标准化服务，不提供投资咨询等个性化服务。
+（八）投资者需按照基金合同约定承担相关费用，包括但不限于管理费、托管费、运营服务费、业绩报酬等费用，详情请仔细阅读基金合同第十六条“基金的费用与税收”相关内容。
+
+本风险揭示书的揭示事项仅为列举性质，未能详尽列明投资者参与私募基金投资所面临的全部风险和可能导致投资者损失的所有因素。
+投资者在参与私募基金投资前，应认真阅读并理解相关业务规则、基金合同及本风险揭示书的全部内容，并确信自身已做好足够的风险评估与财务安排，避免因参与私募基金投资而遭受难以承受的损失。
+
+投资者声明
+作为该私募基金的投资者，本人／机构已充分了解并谨慎评估自身风险承受能力，自愿自行承担投资该私募基金所面临的风险。本人／机构做出以下陈述和声明，并逐条签字确认其内容的真实和正确：
+l 、本人／机构已仔细阅读私募基金法律文件和其他文件，充分理解相关权利、义务、本私募基金运作方式及风险收益特征，愿意承担由上述风险引致的全部后果。
+
+2 、本人／机构知晓，基金管理人、基金销售机构、基金托管人及相关机构不应当对基金财产的收益状况作出任何承诺或担保。 
+3 、本人／机构己通过中国基金业协会的官方网站（www.amac.org.cn）查询了私募基金管理人的基本信息，并将于本私募基金完成备案后查实其募集结算资金专用账户的相关信息与打款账户信息的一致性。  
+4 、在购买本私募基金前，本人／机构已符合 《 私募投资基金监督管理暂行办法 》 有关合格投资者的要求并已按照募集机构的要求提供相关证明文件。 
+5 、本人／机构己认真阅读并完全理解基金合同的所有内容，并愿意自行承担购买私募基金的法律责任。 
+6 、本人／机构己认真阅读并完全理解基金合同第八章“当事人及权利义务”章节的所有内容，并愿意自行承担购买私募基金的法律责任。  
+7 、本人／机构知晓，投资冷静期及回访确认的制度安排以及在此期间的权利。  
+8 、本人／机构己认真阅读并完全理解基金合同第十章“基金的投资”章节的所有内容，并愿意自行承担购买私募基金的法律责任。  
+9 、本人／机构己认真阅读并完全理解基金合同第十六章“基金的费用与税收”章节中的所有内容。  
+10 、本人／机构己认真阅读并完全理解基金合同第二十六章“法律适用和争议的处理”章节中的所有内容。  
+11 、本人／机构知晓，中国基金业协会为私募基金管理人和私募基金办理登记备案不构成对私募基金管理人投资能力、持续合规情况的认可；不作为对基金财产安全的保证。  
+12 、本人／机构承诺本次投资行为是为本人／机构购买私募投资基金。  
+13 、本人／机构承诺不以非法拆分转让为目的购买私募基金，不会突破合格投资者标准，将私募基金份额或其收益权进行非法拆分转让。 
+
+
+
+
+</mutableString>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgA-tT-JRV">
+                    <rect key="frame" x="187.5" y="623" width="187.5" height="44"/>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="dsM-YT-0QF"/>
+                    </constraints>
+                    <state key="normal" title="同意"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOW-9S-cZ9">
+                    <rect key="frame" x="0.0" y="623" width="187.5" height="44"/>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="HDR-AX-pVJ"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.66274509803921566" green="0.66274509803921566" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alL-gO-Asz">
+                    <rect key="frame" x="187" y="623" width="1" height="44"/>
+                    <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="L7F-wQ-WSj"/>
+                        <constraint firstAttribute="width" constant="1" id="tc2-rF-HSr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Onn-cR-iAc" secondAttribute="trailing" constant="12" id="439-Md-0Eh"/>
+                <constraint firstItem="dgA-tT-JRV" firstAttribute="height" secondItem="rOW-9S-cZ9" secondAttribute="height" id="8Bk-gC-RiZ"/>
+                <constraint firstItem="dgA-tT-JRV" firstAttribute="top" secondItem="98P-DA-Gxp" secondAttribute="bottom" id="8am-DI-QbC"/>
+                <constraint firstItem="dgA-tT-JRV" firstAttribute="width" secondItem="rOW-9S-cZ9" secondAttribute="width" id="9Iy-e3-1YK"/>
+                <constraint firstAttribute="bottom" secondItem="dgA-tT-JRV" secondAttribute="bottom" id="Bcw-L7-Drr"/>
+                <constraint firstAttribute="trailing" secondItem="98P-DA-Gxp" secondAttribute="trailing" constant="12" id="CNg-8I-SiU"/>
+                <constraint firstItem="Onn-cR-iAc" firstAttribute="top" secondItem="ttK-K9-Ze8" secondAttribute="bottom" constant="20" id="H84-Wv-LY9"/>
+                <constraint firstItem="ttK-K9-Ze8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="K72-8o-Cpx"/>
+                <constraint firstItem="ttK-K9-Ze8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="MVZ-AD-ziu"/>
+                <constraint firstItem="98P-DA-Gxp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="Oyf-MF-UxA"/>
+                <constraint firstItem="rOW-9S-cZ9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UAn-8y-ZXK"/>
+                <constraint firstItem="98P-DA-Gxp" firstAttribute="top" secondItem="Onn-cR-iAc" secondAttribute="bottom" id="alr-kb-0Nn"/>
+                <constraint firstAttribute="bottom" secondItem="alL-gO-Asz" secondAttribute="bottom" id="byT-xB-wCg"/>
+                <constraint firstItem="Onn-cR-iAc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="m67-vf-pSo"/>
+                <constraint firstAttribute="bottom" secondItem="rOW-9S-cZ9" secondAttribute="bottom" id="s2q-gk-Eix"/>
+                <constraint firstItem="alL-gO-Asz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sPG-cQ-pSz"/>
+                <constraint firstAttribute="trailing" secondItem="dgA-tT-JRV" secondAttribute="trailing" id="slU-Q4-wF8"/>
+                <constraint firstItem="dgA-tT-JRV" firstAttribute="leading" secondItem="rOW-9S-cZ9" secondAttribute="trailing" id="v1C-MN-2PC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBtn" destination="rOW-9S-cZ9" id="PL8-HD-25y"/>
+                <outlet property="doneBtn" destination="dgA-tT-JRV" id="3h5-o9-Go5"/>
+                <outlet property="textView" destination="98P-DA-Gxp" id="56g-hh-yU0"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="QAFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="270"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="声明：本人已如实填写《投资者风险问卷调查（个人版）》，并了解了自己的风险承受类型和适合购买的产品类型。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daO-rJ-Tq1">
+                    <rect key="frame" x="32" y="12" width="317" height="47"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yn8-3l-gDC">
+                    <rect key="frame" x="275" y="79" width="27" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3S-Jg-3sg">
+                    <rect key="frame" x="322" y="79" width="27" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5o-au-28o">
+                    <rect key="frame" x="50" y="115" width="261" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.30196078431372547" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="JJW-HC-5ZV"/>
+                    </constraints>
+                    <state key="normal" title="提交">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="免责声明" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWA-gv-CvO">
+                    <rect key="frame" x="12" y="175" width="49.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZO-U9-0oc">
+                    <rect key="frame" x="12" y="194.5" width="337" height="72"/>
+                    <string key="text">建议投资人定期进行投资风险承受能力测试，以及时了解自身风险承受能力；
+投资风险承受能力测试内容及结果仅供参考，实际投资请慎重，我司不对测试问卷的准确性及全面性负责；
+市场有风险，投资需谨慎。
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOp-Rw-buZ">
+                    <rect key="frame" x="12" y="12" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="CrK-tG-3td"/>
+                        <constraint firstAttribute="height" constant="15" id="qMt-Pj-rTn"/>
+                    </constraints>
+                    <state key="normal" image="unchecked"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Z3S-Jg-3sg" firstAttribute="leading" secondItem="yn8-3l-gDC" secondAttribute="trailing" constant="20" id="25K-b1-8iY"/>
+                <constraint firstAttribute="trailing" secondItem="daO-rJ-Tq1" secondAttribute="trailing" constant="12" id="Mam-9T-tY5"/>
+                <constraint firstItem="DWA-gv-CvO" firstAttribute="top" secondItem="P5o-au-28o" secondAttribute="bottom" constant="20" id="NRA-Js-fG9"/>
+                <constraint firstItem="pZO-U9-0oc" firstAttribute="top" secondItem="DWA-gv-CvO" secondAttribute="bottom" constant="5" id="TiK-aS-Zp9"/>
+                <constraint firstItem="nOp-Rw-buZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="Uiv-mI-mke"/>
+                <constraint firstItem="Z3S-Jg-3sg" firstAttribute="top" secondItem="daO-rJ-Tq1" secondAttribute="bottom" constant="20" id="XYu-0t-dwi"/>
+                <constraint firstAttribute="trailing" secondItem="P5o-au-28o" secondAttribute="trailing" constant="50" id="cYL-DS-eds"/>
+                <constraint firstItem="yn8-3l-gDC" firstAttribute="top" secondItem="daO-rJ-Tq1" secondAttribute="bottom" constant="20" id="e3P-9a-14O"/>
+                <constraint firstItem="P5o-au-28o" firstAttribute="top" secondItem="yn8-3l-gDC" secondAttribute="bottom" constant="20" id="fDJ-Id-bfx"/>
+                <constraint firstItem="DWA-gv-CvO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="gmS-hW-bDJ"/>
+                <constraint firstItem="nOp-Rw-buZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="hjF-ZB-6ur"/>
+                <constraint firstItem="daO-rJ-Tq1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="iqg-Gs-xi0"/>
+                <constraint firstAttribute="trailing" secondItem="Z3S-Jg-3sg" secondAttribute="trailing" constant="12" id="jf8-zN-245"/>
+                <constraint firstItem="daO-rJ-Tq1" firstAttribute="leading" secondItem="nOp-Rw-buZ" secondAttribute="trailing" constant="5" id="lvw-ga-O1y"/>
+                <constraint firstItem="pZO-U9-0oc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="pek-Zo-NiK"/>
+                <constraint firstItem="P5o-au-28o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="rf9-Zk-H1h"/>
+                <constraint firstAttribute="trailing" secondItem="pZO-U9-0oc" secondAttribute="trailing" constant="12" id="v4Y-4b-XBq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLab" destination="yn8-3l-gDC" id="axi-W1-tXj"/>
+                <outlet property="nameLab" destination="Z3S-Jg-3sg" id="6ap-0V-b2G"/>
+                <outlet property="selectBtn" destination="nOp-Rw-buZ" id="2Jg-Ef-JjA"/>
+                <outlet property="submitBtn" destination="P5o-au-28o" id="beu-Qs-gqw"/>
+            </connections>
+            <point key="canvasLocation" x="125.59999999999999" y="-38.680659670164921"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="unchecked" width="100" height="100"/>
+    </resources>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InvestorConfirmation">
+            <connections>
+                <outlet property="doneBtn" destination="gpL-vk-9w3" id="Uyt-vh-JFR"/>
+                <outlet property="investorBtn" destination="zBW-fP-OAk" id="mlr-RX-hd8"/>
+                <outlet property="promiseBtn" destination="asL-TU-e4d" id="BVt-28-Bda"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  根据《私募投资基金募集行为管理办法》之规定，理财通只对“具有相应风险识别能力和风险承担能力，投资于单只私募基金的金额不低于100万，且个人资产不低于300万元或者最近三年个人年均收入不低于50万元”的特定投资者宣传、推介相关私募投资基金产品。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trm-Cv-Dku">
+                    <rect key="frame" x="12" y="44" width="351" height="107.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M27-si-DcQ">
+                    <rect key="frame" x="103.5" y="191.5" width="184" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="本人承诺符合上述合格投资者条件">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asL-TU-e4d">
+                    <rect key="frame" x="83.5" y="197.5" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="PWF-Kw-DWq"/>
+                        <constraint firstAttribute="width" constant="15" id="bNz-BX-sWV"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="unchecked.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpL-vk-9w3">
+                    <rect key="frame" x="50" y="248.5" width="275" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.30196078430000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="sEC-Ax-LbB"/>
+                    </constraints>
+                    <state key="normal" title="确认符合">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBW-fP-OAk">
+                    <rect key="frame" x="144.5" y="590" width="86" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="《风险揭示书》"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="M27-si-DcQ" firstAttribute="leading" secondItem="asL-TU-e4d" secondAttribute="trailing" constant="5" id="0W7-AH-GQC"/>
+                <constraint firstItem="gpL-vk-9w3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="2aO-dB-BM9"/>
+                <constraint firstItem="trm-Cv-Dku" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="BOg-8p-qzB"/>
+                <constraint firstItem="gpL-vk-9w3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DFL-3H-Acv"/>
+                <constraint firstItem="M27-si-DcQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="8" id="VAG-iX-Vh7"/>
+                <constraint firstAttribute="bottom" secondItem="zBW-fP-OAk" secondAttribute="bottom" constant="50" id="gMl-3s-p8w"/>
+                <constraint firstItem="M27-si-DcQ" firstAttribute="top" secondItem="trm-Cv-Dku" secondAttribute="bottom" constant="40" id="gcl-or-AIk"/>
+                <constraint firstItem="trm-Cv-Dku" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="gqS-Ee-EIb"/>
+                <constraint firstItem="gpL-vk-9w3" firstAttribute="top" secondItem="M27-si-DcQ" secondAttribute="bottom" constant="30" id="hRu-6F-e0H"/>
+                <constraint firstItem="asL-TU-e4d" firstAttribute="centerY" secondItem="M27-si-DcQ" secondAttribute="centerY" id="hWX-dt-ES6"/>
+                <constraint firstAttribute="trailing" secondItem="trm-Cv-Dku" secondAttribute="trailing" constant="12" id="lRr-wH-l2E"/>
+                <constraint firstAttribute="trailing" secondItem="gpL-vk-9w3" secondAttribute="trailing" constant="50" id="lZX-hf-zK0"/>
+                <constraint firstItem="zBW-fP-OAk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xh5-Wr-j3m"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="unchecked.png" width="100" height="100"/>
+    </resources>
+</document>

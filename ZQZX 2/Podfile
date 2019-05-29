@@ -1,0 +1,30 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+targetsArray = ['ZQZX', 'ZQZX_Business']
+
+targetsArray.each do |t|
+    target t do
+        use_frameworks!
+        pod 'Charts'
+
+            pod 'AFNetworking'
+            pod 'Masonry'
+            pod 'MJExtension'
+            pod 'IQKeyboardManager', '~> 6.2.0'
+            pod 'MJRefresh'
+            pod ‘SDCycleScrollView'
+            pod 'PPNumberButton'
+            pod 'WMPageController'
+            pod 'MBProgressHUD+JDragon'
+            pod 'LLImagePickerView'
+            pod 'TZImagePickerController'
+            pod 'MWPhotoBrowser'
+            pod 'Qiniu', "~> 7.1"
+            pod 'ActionSheetPicker-3.0', '~> 2.3.0'
+            pod 'FLAnimatedImage'
+            pod 'Bugly'
+            pod 'ZJJTimeCountDown', '~> 1.0.2'
+
+    end
+end
