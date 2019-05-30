@@ -69,7 +69,7 @@
         leftBtn.backgroundColor = kTabBGColor;
         leftBtn.layer.masksToBounds = YES;
         leftBtn.layer.cornerRadius = 5.0f;
-        [leftBtn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+        [leftBtn setTitleColor:kTitleColor forState:(UIControlStateNormal)];
         [leftBtn setTitle:self.leftString forState:(UIControlStateNormal)];
         [leftBtn setFrame:CGRectMake(12, 7.5, (kWidth-36)/2, self.height-15)];
         
@@ -86,7 +86,7 @@
             
         }else{
             leftBtn.backgroundColor = kWhiteColor;
-            [leftBtn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+            [leftBtn setTitleColor:kTitleColor forState:(UIControlStateNormal)];
             [leftBtn setTitle:self.leftString forState:(UIControlStateNormal)];
             [leftBtn setFrame:CGRectMake(80, 0, (kWidth-80)/2, self.height)];
             UIView * line = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0.5, self.height)];

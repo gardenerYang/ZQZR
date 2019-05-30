@@ -24,13 +24,13 @@
     
     _titleLb=[[UILabel alloc]init];
     _titleLb.font = [UIFont s16];
-    _titleLb.textColor=[UIColor blackColor];
+    _titleLb.textColor=kTitleColor;
     _titleLb.textAlignment=NSTextAlignmentLeft;
     [self.BKView addSubview:_titleLb];
     
     _periodlab = [[UILabel alloc]init];
     _periodlab.font = [UIFont s16];
-    _periodlab.textColor=[UIColor blackColor];
+    _periodlab.textColor=kTitleColor;
     _periodlab.textAlignment=NSTextAlignmentLeft;
     [self.BKView addSubview:_periodlab];
     

@@ -19,7 +19,7 @@
 
         _titleLabel=[[UILabel alloc]init];
         _titleLabel.font = [UIFont s16];
-        _titleLabel.textColor=[UIColor blackColor];
+        _titleLabel.textColor=kTitleColor;
         _titleLabel.textAlignment=NSTextAlignmentLeft;
         
         [_BKView addSubview:_titleLabel];
@@ -43,7 +43,7 @@
         
         _numTitleLb=[[UILabel alloc]init];
         _numTitleLb.font = [UIFont s16];
-        _numTitleLb.textColor=[UIColor blackColor];
+        _numTitleLb.textColor=kTitleColor;
         _numTitleLb.textAlignment=NSTextAlignmentCenter;
         [_BKView addSubview:_numTitleLb];
         
@@ -55,7 +55,7 @@
         
         _titleLb=[[UILabel alloc]init];
         _titleLb.font = [UIFont s14];
-        _titleLb.textColor=[UIColor blackColor];
+        _titleLb.textColor=kTitleColor;
         _titleLb.textAlignment=NSTextAlignmentLeft;
         [_BKView addSubview:_titleLb];
         

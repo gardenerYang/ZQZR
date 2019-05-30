@@ -125,7 +125,7 @@ static const void *noViewKey = &noViewKey;
 //        self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 //        self.hud.removeFromSuperViewOnHide = NO;
 //        self.hud.color = [UIColor colorWithWhite:1 alpha:0.5];
-//        self.hud.labelColor = [UIColor blackColor];
+//        self.hud.labelColor = kTitleColor;
 //        self.hud.opacity = 0.5f;
 //    }
 //

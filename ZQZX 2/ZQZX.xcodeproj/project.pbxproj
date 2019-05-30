@@ -54,6 +54,12 @@
 		846715D0226C952F0074D998 /* RemindListFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846715CE226C952F0074D998 /* RemindListFooterView.m */; };
 		846715D2226C95370074D998 /* RemindListFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846715D1226C95370074D998 /* RemindListFooterView.xib */; };
 		846715D3226C95370074D998 /* RemindListFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846715D1226C95370074D998 /* RemindListFooterView.xib */; };
+		8477F63122A00C4F00AABBEC /* HomeCorporateNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8477F62F22A00C4F00AABBEC /* HomeCorporateNewsCell.m */; };
+		8477F63222A00C4F00AABBEC /* HomeCorporateNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8477F63022A00C4F00AABBEC /* HomeCorporateNewsCell.xib */; };
+		8477F63522A012BD00AABBEC /* HomeIndustryNewsItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8477F63422A012BD00AABBEC /* HomeIndustryNewsItemView.m */; };
+		8477F63B22A0143300AABBEC /* HomeIndustryNewsItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8477F63A22A0143300AABBEC /* HomeIndustryNewsItemCell.m */; };
+		8477F63C22A0143300AABBEC /* HomeIndustryNewsItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8477F63A22A0143300AABBEC /* HomeIndustryNewsItemCell.m */; };
+		8477F63F22A0282700AABBEC /* HomeVersionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8477F63E22A0282700AABBEC /* HomeVersionCell.m */; };
 		848A583121F7E71A006D2092 /* InvestorConfirmation.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A582F21F7E71A006D2092 /* InvestorConfirmation.m */; };
 		848A583221F7E71B006D2092 /* InvestorConfirmation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848A583021F7E71A006D2092 /* InvestorConfirmation.xib */; };
 		848A583521F7F164006D2092 /* RiskPopWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A583421F7F164006D2092 /* RiskPopWindowView.m */; };
@@ -565,6 +571,15 @@
 		846715CD226C952F0074D998 /* RemindListFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemindListFooterView.h; sourceTree = "<group>"; };
 		846715CE226C952F0074D998 /* RemindListFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemindListFooterView.m; sourceTree = "<group>"; };
 		846715D1226C95370074D998 /* RemindListFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemindListFooterView.xib; sourceTree = "<group>"; };
+		8477F62E22A00C4F00AABBEC /* HomeCorporateNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCorporateNewsCell.h; sourceTree = "<group>"; };
+		8477F62F22A00C4F00AABBEC /* HomeCorporateNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCorporateNewsCell.m; sourceTree = "<group>"; };
+		8477F63022A00C4F00AABBEC /* HomeCorporateNewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCorporateNewsCell.xib; sourceTree = "<group>"; };
+		8477F63322A012BD00AABBEC /* HomeIndustryNewsItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeIndustryNewsItemView.h; sourceTree = "<group>"; };
+		8477F63422A012BD00AABBEC /* HomeIndustryNewsItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeIndustryNewsItemView.m; sourceTree = "<group>"; };
+		8477F63922A0143300AABBEC /* HomeIndustryNewsItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeIndustryNewsItemCell.h; sourceTree = "<group>"; };
+		8477F63A22A0143300AABBEC /* HomeIndustryNewsItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeIndustryNewsItemCell.m; sourceTree = "<group>"; };
+		8477F63D22A0282700AABBEC /* HomeVersionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVersionCell.h; sourceTree = "<group>"; };
+		8477F63E22A0282700AABBEC /* HomeVersionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVersionCell.m; sourceTree = "<group>"; };
 		848A582E21F7E71A006D2092 /* InvestorConfirmation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvestorConfirmation.h; sourceTree = "<group>"; };
 		848A582F21F7E71A006D2092 /* InvestorConfirmation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestorConfirmation.m; sourceTree = "<group>"; };
 		848A583021F7E71A006D2092 /* InvestorConfirmation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvestorConfirmation.xib; sourceTree = "<group>"; };
@@ -1330,6 +1345,15 @@
 				84A86D7A2227B71200BBE893 /* detailWebviewCell.m */,
 				8418B4AB223A629500DA2D89 /* HomeTimeLabel.h */,
 				8418B4AC223A629500DA2D89 /* HomeTimeLabel.m */,
+				8477F62E22A00C4F00AABBEC /* HomeCorporateNewsCell.h */,
+				8477F62F22A00C4F00AABBEC /* HomeCorporateNewsCell.m */,
+				8477F63022A00C4F00AABBEC /* HomeCorporateNewsCell.xib */,
+				8477F63922A0143300AABBEC /* HomeIndustryNewsItemCell.h */,
+				8477F63A22A0143300AABBEC /* HomeIndustryNewsItemCell.m */,
+				8477F63322A012BD00AABBEC /* HomeIndustryNewsItemView.h */,
+				8477F63422A012BD00AABBEC /* HomeIndustryNewsItemView.m */,
+				8477F63D22A0282700AABBEC /* HomeVersionCell.h */,
+				8477F63E22A0282700AABBEC /* HomeVersionCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2313,6 +2337,7 @@
 				849F8A5C21F97134006FEA21 /* EvaluationResultsVC.xib in Resources */,
 				84ABD72D21F17BD400D28E5A /* resource.bundle in Resources */,
 				F71FD4A62176DA8000B648BE /* PR_project_ok@2x.png in Resources */,
+				8477F63222A00C4F00AABBEC /* HomeCorporateNewsCell.xib in Resources */,
 				F71FD4A32176DA5D00B648BE /* choice_top@2x.png in Resources */,
 				8406DD7B21F0734900C6FC85 /* HZPhotoBrowser.bundle in Resources */,
 				84ABD73A21F1DC8100D28E5A /* QAFooterView.xib in Resources */,
@@ -2531,6 +2556,7 @@
 				F7C4C13A218D736000734E3F /* BusinessSetUpViewController.m in Sources */,
 				F71FD4602174417500B648BE /* HomeTableViewCell.m in Sources */,
 				F72C7091216DA8DE0042223E /* ViewController.m in Sources */,
+				8477F63F22A0282700AABBEC /* HomeVersionCell.m in Sources */,
 				F711B403217EFFC80083CA35 /* StretchingFlowLayout.m in Sources */,
 				84C65C3121F5B8B800143AA2 /* OrderEarningsDetails.m in Sources */,
 				F71FD48021749BD200B648BE /* UIView+Extension.m in Sources */,
@@ -2538,6 +2564,7 @@
 				F7C4C111218BEC6E00734E3F /* BusinessOrderModel.m in Sources */,
 				848A583521F7F164006D2092 /* RiskPopWindowView.m in Sources */,
 				F7E04A7921897B1B001E234F /* MyOrderDetailsModel.m in Sources */,
+				8477F63522A012BD00AABBEC /* HomeIndustryNewsItemView.m in Sources */,
 				84ABD72C21F17BD400D28E5A /* SZQuestionOptionCell.m in Sources */,
 				F71FD4E32178749C00B648BE /* BaseClass.m in Sources */,
 				F71FD44B21742BE600B648BE /* UITableView+Register.m in Sources */,
@@ -2561,6 +2588,7 @@
 				84ECB91D2268D15D009B165D /* RemindListVC.m in Sources */,
 				F71FD4C421782AB100B648BE /* URLManage.m in Sources */,
 				F72C70E8216DD6440042223E /* UIFont+Util.m in Sources */,
+				8477F63122A00C4F00AABBEC /* HomeCorporateNewsCell.m in Sources */,
 				F7C4C11D218BF79B00734E3F /* MyBusinessModel.m in Sources */,
 				F7FD232B217DA625003C7563 /* BaseCollectionViewController.m in Sources */,
 				F7C4C105218AF2B400734E3F /* StatisticsModel.m in Sources */,
@@ -2648,6 +2676,7 @@
 				F711B401217EFE6B0083CA35 /* MyBusinessViewController.m in Sources */,
 				84ABD72921F17BD400D28E5A /* SZConfigure.m in Sources */,
 				F711B7B02182F9AC0083CA35 /* MyModel.m in Sources */,
+				8477F63B22A0143300AABBEC /* HomeIndustryNewsItemCell.m in Sources */,
 				F711B7E6218461A10083CA35 /* ExamineViewController.m in Sources */,
 				F7C4C11B218BF75D00734E3F /* HttpRequest+MyBusiness.m in Sources */,
 				F711B406217EFFD60083CA35 /* InvestmentManagementCell.m in Sources */,
@@ -2840,6 +2869,7 @@
 				F7FD22B5217D97EE003C7563 /* HeadTextLabel.m in Sources */,
 				F7FD233F217DAA57003C7563 /* BaseCollectionViewController.m in Sources */,
 				F7C4C117218BF12800734E3F /* MyBusinessOrderViewController.m in Sources */,
+				8477F63C22A0143300AABBEC /* HomeIndustryNewsItemCell.m in Sources */,
 				F7FD22B6217D97EE003C7563 /* URLManage.m in Sources */,
 				F711B7E3218458800083CA35 /* ProjectTableViewCell.m in Sources */,
 				F7FD22B7217D97EE003C7563 /* UIFont+Util.m in Sources */,
@@ -3173,7 +3203,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8X8T5U2527;
+				DEVELOPMENT_TEAM = 45JMQN5SF6;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZQZX/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ZQZX/Info.plist";
@@ -3244,7 +3274,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8X8T5U2527;
+				DEVELOPMENT_TEAM = 45JMQN5SF6;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZQZX/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ZQZX/Info.plist";

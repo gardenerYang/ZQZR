@@ -104,7 +104,7 @@
             label.text = self.alertTitle;
             label.textAlignment = NSTextAlignmentCenter;
             label.font = [UIFont systemFontOfSize:15.f];
-            label.textColor = [UIColor blackColor];
+            label.textColor = kTitleColor;
             [_topContentView addSubview:label];
             self.middleLabel = label;
             UIView * view = [self.dropDelegate frankDropBounsViewResetTopView];

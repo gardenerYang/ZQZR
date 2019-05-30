@@ -63,7 +63,7 @@
 }
 - (void)createShadeView{
     self.shadeView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kWidth, kHeight)];
-    self.shadeView.backgroundColor = [UIColor blackColor];
+    self.shadeView.backgroundColor = kTitleColor;
     self.shadeView.alpha = 0.5f;
     [kWindow addSubview:self.shadeView];
     self.shadeView.alpha = 0;

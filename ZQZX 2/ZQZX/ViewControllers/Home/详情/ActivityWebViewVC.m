@@ -44,9 +44,9 @@
         [self requestParticipateActivity];
 
     }];
-    leftBtn.layer.borderColor = kUnSelected.CGColor;
+    leftBtn.layer.borderColor = kLightGray.CGColor;
     leftBtn.layer.borderWidth = 0.5f;
-    rightBtn.layer.borderColor = kUnSelected.CGColor;
+    rightBtn.layer.borderColor = kLightGray.CGColor;
     rightBtn.layer.borderWidth = 0.5f;
 }
 //请求参加活动

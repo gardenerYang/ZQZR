@@ -80,7 +80,7 @@
         UIButton * btn = [[UIButton alloc] initWithFrame:CGRectMake(off_x, 0, width, height)];
         btn.tag = i + 1;
         [btn setTitle:toolTitles[i] forState:UIControlStateNormal];
-        [btn setTitleColor:self.defaultColor?:[UIColor blackColor] forState:UIControlStateNormal];
+        [btn setTitleColor:self.defaultColor?:kTitleColor forState:UIControlStateNormal];
         btn.titleLabel.font = [UIFont systemFontOfSize:15.f];
         
         
@@ -112,7 +112,7 @@
         
     }];
     
-    [self.lastBtn setTitleColor:self.defaultColor?:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.lastBtn setTitleColor:self.defaultColor?:kTitleColor forState:UIControlStateNormal];
     
     [btn setTitleColor:self.selectedColor?:[UIColor m_red] forState:UIControlStateNormal];
     self.lastBtn = btn;

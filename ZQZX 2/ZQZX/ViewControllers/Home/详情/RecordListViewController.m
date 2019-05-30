@@ -41,11 +41,11 @@
         cell.moneyLb.text = @"预约金额";
         cell.timeLb.text = @"预约时间";
         cell.nameLb.font = [UIFont s16];
-        cell.nameLb.textColor = [UIColor blackColor];
+        cell.nameLb.textColor = kTitleColor;
         cell.timeLb.font = [UIFont s16];
-        cell.timeLb.textColor = [UIColor blackColor];
+        cell.timeLb.textColor = kTitleColor;
         cell.moneyLb.font = [UIFont s16];
-        cell.moneyLb.textColor = [UIColor blackColor];
+        cell.moneyLb.textColor = kTitleColor;
         cell.backgroundColor = [UIColor m_bgColor];
     }else{
         cell.nameLb.text = @"13937187606";

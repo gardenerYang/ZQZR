@@ -28,6 +28,9 @@
 #import "RemindListVC.h"
 #import "RemindListSelectView.h"
 #import "ActivityWebViewVC.h"
+#import "HomeCorporateNewsCell.h"
+#import "HomeIndustryNewsItemCell.h"
+#import "HomeVersionCell.h"
 @interface HomeViewController ()<SDCycleScrollViewDelegate,ZJJTimeCountDownDelegate>
 @property (nonatomic, strong) SDCycleScrollView          *carouselView;
 @property (nonatomic, strong) HomeModel          *homeModel;
@@ -139,8 +142,8 @@
         NSLog(@"%@",[imgArr valueForKeyPath:@"imageUrl"]);
         NSArray *urlArr =  [imgArr valueForKeyPath:@"imageUrl"];
         wf.carouselView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, Iphonewidth, 180) delegate:self placeholderImage:[UIImage imageNamed:@"Wload"]];
-        wf.carouselView.currentPageDotImage = [UIImage imageNamed:@"pageControlCurrentDot"];
-        wf.carouselView.pageDotImage = [UIImage imageNamed:@"pageControlDot"];
+        wf.carouselView.currentPageDotImage = [UIImage imageNamed:@"remind_btn"];
+        wf.carouselView.pageDotImage = [UIImage imageNamed:@"home_banner_select"];
         wf.carouselView.imageURLStringsGroup = urlArr;
         self.tableView.tableHeaderView = wf.carouselView;
         
@@ -157,9 +160,9 @@
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    [self.tableView registerClass:[HomeTableViewCell class] forCellReuseIdentifier:NSStringFromClass([HomeTableViewCell class])];
-    [self.tableView registerClass:[HomeFineTableViewCell class] forCellReuseIdentifier:NSStringFromClass([HomeFineTableViewCell class])];
     [self.tableView registerClass:[HomeButtonTableViewCell class] forCellReuseIdentifier:NSStringFromClass([HomeButtonTableViewCell class])];
+    [self.tableView registerClass:[HomeVersionCell class] forCellReuseIdentifier:NSStringFromClass([HomeVersionCell class])];
+    [self.tableView registerNib:[UINib nibWithNibName:@"HomeCorporateNewsCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"HomeCorporateNewsCell"];
     __weak typeof(self) wf = self;
 
     [self.tableView addMJ_Header:^{
@@ -171,66 +174,33 @@
     
 }
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
-    return 3;
-}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (section == 0) {
-        return 1;
-    }else if (section == 1){
-        return self.homeModel.inve.count;
-    }
-    else{
-       return self.homeModel.moments.count;
-    }
+    return 4;
     
 }
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    if (section == 2) {
-        UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, Iphonewidth, 10)];
-        headerView.backgroundColor = [UIColor whiteColor];
-        UILabel *titleLabel=[[UILabel alloc]initWithFrame:CGRectMake(10, 0, 100, 40)];
-        titleLabel.font = [UIFont s16];
-        titleLabel.textColor=[UIColor blackColor];
-        titleLabel.textAlignment=NSTextAlignmentLeft;
-        titleLabel.text = @"发现";
-        [headerView addSubview:titleLabel];
-        
-        UIButton *moreBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [moreBtn setTitle:@"更多>>" forState:UIControlStateNormal];
-        [moreBtn setTitleColor:[UIColor m_textGrayColor] forState:UIControlStateNormal];
-        moreBtn.titleLabel.font = [UIFont s14];
-        [moreBtn addAction:^(UIButton *sender) {
-            self.tabBarController.selectedIndex = 1;
-        }];
-        [headerView addSubview:moreBtn];
-        [moreBtn setFrame:CGRectMake(Iphonewidth-70, 0, 60, 40)];
-        
-        UIView *lineview = [[UIView alloc]initWithFrame:CGRectMake(0, 39, Iphonewidth, 1)];
-        lineview.backgroundColor = [UIColor m_lineColor];
-        [headerView addSubview:lineview];
-        
-        return headerView;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row ==0) {
+        return 103;
+    }else if (indexPath.row ==1){
+        return 88+((kWidth-60)*240/630);
+    }else if (indexPath.row ==2){
+        return 65 + (((kWidth-60)/3)*185/120);
+    }else{
+        return (kWidth-30)*200/690+15;
     }
-    else{
-        return nil;
-    }
-    
-    
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
-        NSArray *titleArr = [NSArray arrayWithObjects:@"票据投资",@"保理投资",@"股权投资",@"银行产品", nil];
-        NSArray *selectArr = [NSArray arrayWithObjects:@"piaoju_b",@"bao_b",@"gu_b",@"wallet", nil];
-        NSArray *noselectArr = [NSArray arrayWithObjects:@"piaoju_a",@"bao_a",@"gu_a",@"wallet", nil];
+    if (indexPath.row == 0) {
+        NSArray *titleArr = [NSArray arrayWithObjects:@"票据产品",@"保险产品",@"银行产品",@"其他产品", nil];
+        NSArray *selectArr = [NSArray arrayWithObjects:@"home_negotiable",@"home_insure",@"home_bank",@"home_other", nil];
+        NSArray *noselectArr = [NSArray arrayWithObjects:@"home_negotiable",@"home_insure",@"home_bank",@"home_other", nil];
         
         HomeButtonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([HomeButtonTableViewCell class]) forIndexPath:indexPath];
         cell.backgroundColor=[UIColor m_bgColor];
         
         
         __weak typeof(self) wf = self;
-        [cell setBtnTitle:titleArr selectImgArr:selectArr imgArr:noselectArr color:[UIColor blackColor]];
+        [cell setBtnTitle:titleArr selectImgArr:selectArr imgArr:noselectArr color:kTitleColor];
         [cell setBtnClickBlock:^(NSUInteger selectClick) {
             if (![AppUserProfile sharedInstance].isLogon) {
                 [self toLoginVC];
@@ -279,100 +249,22 @@
            
         }];
         return cell;
-    }
-   else if (indexPath.section == 1) {
-        HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([HomeTableViewCell class]) forIndexPath:indexPath];
-        cell.backgroundColor=[UIColor m_bgColor];
-       InveItem *model  = self.homeModel.inve[indexPath.row];
-       NSString *title;
-       if (@(model.type).intValue == 0) {
-           title = @"票据投资";
-       }else if (@(model.type).intValue == 1){
-           title = @"保理投资";
-
-       }else if (@(model.type).intValue == 2){
-           title = @"房产投资";
-
-       }else{
-           title = @"股权投资";
-
-       }
-       cell.titleLabel.text = title;
-       cell.numTitleLb.text =  [NSString stringFormatPercentNumberWithFloat:@(model.expectedYield).floatValue];
-       cell.dayLb.text = [NSString stringWithFormat:@"%ld天",(long)model.projectDuration];
-       cell.moneyLb.text = [NSString stringWithFormat:@"%@起投",[self moneyStr:model.purchaseAmount]];
-       cell.titleLb.text = model.name;
-       timeModel *timemodel = self.timeListArr[indexPath.row];
-       [cell.timeLb setupCellWithModel:timemodel indexPath:indexPath];
-       cell.timeLb.attributedText = [self.countDown countDownWithTimeLabel:cell.timeLb];
-       cell.moneyLb.text =[NSString stringWithFormat:@"%@起投",[self moneyStr:model.purchaseAmount]];
-       CGFloat per = (model.actualTotalAmount-model.reservationAmount)/model.proTotalAmount;
-       NSLog(@"%f",per);
-       cell.progressView.progress = per;
-       NSString * perString = @"%";
-       cell.progressLabel.text = [NSString stringWithFormat:@"预约进度:%.f%@",per*100,perString];
-       NSString *stateText;
-       if (@(model.status).intValue == 1) {
-           stateText = @"募集中";
-       }else if (@(model.status).intValue == 4){
-           stateText = @"还款中";
-           cell.stateLb.backgroundColor = [UIColor withHexStr:@"#469ee8"];
-       }else if (@(model.status).intValue == 3){
-           stateText = @"已募满";
-       }
-       else if (@(model.status).intValue == 6){
-           stateText = @"已还款";
-       }
-       else {
-           stateText = @"";
-       }
-       cell.stateLb.text = stateText;
-       if (model.platformRateYear > 0) {
-           cell.interestsLb.hidden = NO;
-       }else{
-           cell.interestsLb.hidden = YES;
-       }
-       [cell setMorebtnClickBlock:^{
-           if (@(model.type).intValue == 1) {
-               InvestmentViewController *investmentVC =[[InvestmentViewController alloc]initType:@(model.type).stringValue];
-               investmentVC.type = model.type;
-               [investmentVC setCustomerTitle:title];
-               [self.navigationController pushViewController:investmentVC animated:YES];
-           }
-           else{
-               HomeListViewController *homeListVC = [[HomeListViewController alloc]init];
-               [homeListVC setCustomerTitle:title];
-               homeListVC.type1 = @"0";
-               homeListVC.type2 = @"4";
-               [self.navigationController pushViewController:homeListVC animated:YES];
-           }
-       }];
-
+    }else if (indexPath.row == 1) {
+        HomeCorporateNewsCell * cell = [tableView dequeueReusableCellWithIdentifier:@"HomeCorporateNewsCell"];
+        return cell;
+    }else if (indexPath.row ==2){
+        HomeIndustryNewsItemCell * cell = [tableView dequeueReusableCellWithIdentifier:@"HomeIndustryNewsItemCell"];
+        if (cell ==nil) {
+            cell = [[HomeIndustryNewsItemCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"HomeIndustryNewsItemCell"];
+        }
+        return cell;
+    }else{
+        HomeVersionCell * cell = [tableView dequeueReusableCellWithIdentifier:@"HomeVersionCell"];
         return cell;
     }
-    else{
-        HomeFineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([HomeFineTableViewCell class]) forIndexPath:indexPath];
-        cell.backgroundColor=[UIColor m_bgColor];
-        MomentsItem *model  = self.homeModel.moments[indexPath.row];
-        [cell.imgView sd_setNewsImageWithString:model.imageUrl];
-        cell.titleLabel.text = model.title;
-        cell.timeLabel.text = [self parseTimeStamp:[NSString stringWithFormat:@"%ld",(long)model.addTime] withType:kTimeStampDateOnlyTextLine];
-        return cell;
-    }
-}
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    if (section == 2) {
-        return 40;
-    }
-    return 0.1;
     
 }
 
-//MARK: delegate
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
-}
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

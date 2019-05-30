@@ -97,7 +97,7 @@
 -(UIButton *)buttonWithLeftTitle:(NSString *)title titleColor:(UIColor *)titleColor Font:(UIFont *)font backgroundColor:(UIColor *)backgroundColor RightImageName:(NSString *)imageName Frame:(CGRect)frame
 {
     
-    titleColor=titleColor?:[UIColor blackColor];
+    titleColor=titleColor?:kTitleColor;
     font=font?:[UIFont s16];
     
     UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];

@@ -60,7 +60,7 @@
 - (WSTextView*)textView {
     if (!_textView) {
         _textView = [[WSTextView alloc] init];//初始化
-        _textView.textColor = [UIColor blackColor];//设置textview里面的字体颜色
+        _textView.textColor = kTitleColor;//设置textview里面的字体颜色
         _textView.font = [UIFont s14];//设置字体名字和字体大小
         _textView.delegate = self;//设置它的委托方法
         _textView.backgroundColor=[UIColor whiteColor];

@@ -101,7 +101,7 @@
    UIView *footView = [[UIView alloc]init];
     UILabel *titleLb1=[[UILabel alloc]initWithFrame:CGRectMake(10, 10, Iphonewidth-20, 40)];
     titleLb1.font = [UIFont s16];
-    titleLb1.textColor=[UIColor blackColor];
+    titleLb1.textColor=kTitleColor;
     titleLb1.textAlignment=NSTextAlignmentLeft;
     titleLb1.text = @"上传打款凭证";
     [footView addSubview:titleLb1];
@@ -132,7 +132,7 @@
     
     UILabel *titleLb=[[UILabel alloc]initWithFrame:CGRectMake(10, pickerV.frame.size.height + 70, Iphonewidth-20, 40)];
     titleLb.font = [UIFont s16];
-    titleLb.textColor=[UIColor blackColor];
+    titleLb.textColor=kTitleColor;
     titleLb.textAlignment=NSTextAlignmentLeft;
     titleLb.text = @"上传其他照片";
     [footView addSubview:titleLb];
@@ -291,7 +291,7 @@
         cell.textField.placeholder = @"请选择打款日期";
         cell.textField.text = _time;
         cell.textField.userInteractionEnabled = NO;
-        cell.textField.textColor = [UIColor blackColor];
+        cell.textField.textColor = kTitleColor;
         return cell;
     }else{
         MyBusinessOrderdetailsCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MyBusinessOrderdetailsCell class]) forIndexPath:indexPath];
@@ -299,7 +299,7 @@
         cell.textField.placeholder = @"请选择打款方式";
         cell.textField.text = _remitWaySting;
         cell.textField.userInteractionEnabled = NO;
-        cell.textField.textColor = [UIColor blackColor];
+        cell.textField.textColor = kTitleColor;
         return cell;
     }
     

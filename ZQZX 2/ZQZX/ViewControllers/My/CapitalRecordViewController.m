@@ -96,11 +96,11 @@
     cell.timeLab.text = [self parseTimeStamp:[NSString stringWithFormat:@"%ld",(long)model.addTime] withType:kTimeStampWithSecond];
     cell.titleLabel.text = model.productName;
     if (model.status==0) {
-        cell.moneyLab.textColor = [UIColor blackColor];
+        cell.moneyLab.textColor = kTitleColor;
         cell.moneyLab.text = [NSString stringWithFormat:@"+%@",@(model.actualAmount).stringValue];
         cell.DescriptionLabel.text = [NSString stringWithFormat:@"\n备注:当前已投资金额%.2f元。\n",model.capital];
     }else if (model.status ==1){
-        cell.moneyLab.textColor = [UIColor blackColor];
+        cell.moneyLab.textColor = kTitleColor;
         cell.moneyLab.text = [NSString stringWithFormat:@"-%@",@(model.actualAmount).stringValue];
         cell.DescriptionLabel.text = [NSString stringWithFormat:@"\n备注:已还款金额%.2f元。其中本金%.2f元，利息%.2f元。\n",model.actualAmount,model.capital,model.interest];
 

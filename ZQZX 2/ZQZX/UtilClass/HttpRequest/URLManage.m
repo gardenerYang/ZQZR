@@ -10,13 +10,13 @@
 @implementation URLManage
 + (NSString *)getCurrentBaseUrl{
 #if BusinessTag
-    return @"http://39.105.24.235:8082";//测试
-//    return @"http://store.zqbill.com";//正式
+//    return @"http://39.105.24.235:8082";//测试
+    return @"http://store.zqbill.com";//正式
 
 #else
 //  return @"http://39.105.24.235:8081";
-    return @"http://10.16.8.46:8080";//测试
-//    return @"http://clinet.zqbill.com";//正式
+//    return @"http://10.16.8.46:8080";//测试
+    return @"http://clinet.zqbill.com";//正式
 #endif
     
 /*#if DEBUG

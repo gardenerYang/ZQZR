@@ -36,7 +36,7 @@
     [self.view addSubview:self.bgView];
     [self.bgView addSubview:self.tableView];
     self.titleLabel=[[UILabel alloc]init];
-    self.titleLabel.textColor=[UIColor blackColor];
+    self.titleLabel.textColor=kTitleColor;
     self.titleLabel.font= [UIFont s14];
     self.titleLabel.text=@"请选择您的银行卡";
     [self.bgView addSubview:self.titleLabel];

@@ -62,12 +62,18 @@
 #define kCurrentVC [[QYBaseViewController new] getCurrentVC].view
 #define kWindow [UIApplication sharedApplication].keyWindow
 #define kLineColor        [UIColor colorWithRed:237/255.0 green:237/255.0 blue:237/255.0 alpha:1]
-#define kTabBGColor       [UIColor colorWithRed:244/255.0 green:245/255.0 blue:246/255.0 alpha:1]
-#define kTitleColor       [UIColor withHexStr:@"333333"]
-#define kSubtitleColor    [UIColor withHexStr:@"666666"]
-#define kUnSelected       [UIColor withHexStr:@"999999"]
-
+#define kTabBGColor       [UIColor withHexStr:@"f9f9f9"]
+#define kTitleColor       [UIColor withHexStr:@"181818"]
+#define kSubtitleColor    [UIColor withHexStr:@"353535"]
+#define kLightGray        [UIColor withHexStr:@"888888"]
 #define kOrangeColor      [UIColor withHexStr:@"F18C09"]
+#define kMainColor        [UIColor withHexStr:@"cea470"]
+#define kF8               kFont(8)
+#define kF10               kFont(10)
+#define kF12               kFont(12)
+#define kF14               kFont(14)
+#define kF16               kFont(16)
+#define kF16               kFont(18)
 
 
 #endif

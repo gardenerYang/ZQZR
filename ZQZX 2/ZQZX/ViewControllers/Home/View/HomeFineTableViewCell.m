@@ -22,14 +22,14 @@
         
         _titleLabel=[[UILabel alloc]init];
         _titleLabel.font = [UIFont s16];
-        _titleLabel.textColor=[UIColor blackColor];
+        _titleLabel.textColor=kTitleColor;
         _titleLabel.textAlignment=NSTextAlignmentLeft;
         _titleLabel.numberOfLines = 2;
         [_BKView addSubview:_titleLabel];
         
         _timeLabel=[[UILabel alloc]init];
         _timeLabel.font = [UIFont s12];
-        _timeLabel.textColor=[UIColor blackColor];
+        _timeLabel.textColor=kTitleColor;
         _timeLabel.textAlignment=NSTextAlignmentLeft;
         [_BKView addSubview:_timeLabel];
         

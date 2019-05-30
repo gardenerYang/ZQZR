@@ -213,7 +213,7 @@
                         UILabel *title = [[UILabel alloc] init];
                         title.frame = CGRectMake(CGRectGetMaxX(icon.frame), 0, maxTitleSize.width, kActionItemHeight);
                         title.font = [UIFont systemFontOfSize:kActionItemFontSize];
-                        title.tintColor = [UIColor blackColor];
+                        title.tintColor = kTitleColor;
                         title.text = _otherTitles[i];
                         title.tag = 1;
                         title;
@@ -225,7 +225,7 @@
                         UILabel *title = [[UILabel alloc] init];
                         title.frame = CGRectMake(0, 0, maxTitleSize.width, kActionItemHeight);
                         title.font = [UIFont systemFontOfSize:kActionItemFontSize];
-                        title.tintColor = [UIColor blackColor];
+                        title.tintColor = kTitleColor;
                         title.text = _otherTitles[i];
                         title.textAlignment = NSTextAlignmentCenter;
                         title.tag = 1;
@@ -280,7 +280,7 @@
             cancelBtn.tag = -1;
             cancelBtn.backgroundColor = [UIColor whiteColor];
             cancelBtn.titleLabel.font = [UIFont systemFontOfSize:kActionItemFontSize];
-            [cancelBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+            [cancelBtn setTitleColor:kTitleColor forState:UIControlStateNormal];
             [cancelBtn setTitle:_cancelTitle forState:UIControlStateNormal];
             [cancelBtn setBackgroundImage:self.normalImage forState:UIControlStateNormal];
             [cancelBtn setBackgroundImage:self.highlightedImage forState:UIControlStateHighlighted];

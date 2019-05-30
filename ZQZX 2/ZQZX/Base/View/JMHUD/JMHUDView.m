@@ -71,7 +71,7 @@
     self.tipsLabel.numberOfLines = 0;
     self.tipsLabel.textAlignment = NSTextAlignmentCenter;
     self.tipsLabel.font = [UIFont systemFontOfSize:FONT_SIZE];
-    self.tipsLabel.textColor = [UIColor blackColor];
+    self.tipsLabel.textColor = kTitleColor;
     self.tipsLabel.edgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
 }
 #pragma mark 设置self的layer

@@ -239,7 +239,7 @@
     if (_shadeView ==nil) {
         _shadeView = [[UIView alloc]initWithFrame:kWindow.bounds];
         [kWindow addSubview:_shadeView];
-        _shadeView.backgroundColor = [UIColor blackColor];
+        _shadeView.backgroundColor = kTitleColor;
         _shadeView.alpha = 0;
     }
     return _shadeView;

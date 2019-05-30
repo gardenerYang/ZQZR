@@ -11,7 +11,7 @@
 @implementation UIColor (Util)
 + (UIColor *)withHexStr:(NSString *)hexStr {
     if (hexStr == nil || !(hexStr.length >= 6 && hexStr.length <= 9)) {
-        return [UIColor blackColor];
+        return kTitleColor;
     }
     
     NSString *cString = [[hexStr stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];

@@ -73,7 +73,7 @@
     
     childVC.tabBarItem.title = title;
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-    dict[NSForegroundColorAttributeName] = [UIColor blackColor];
+    dict[NSForegroundColorAttributeName] = kTitleColor;
     dict[NSFontAttributeName] = [UIFont systemFontOfSize:10];
     [childVC.tabBarItem setTitleTextAttributes:dict forState:UIControlStateNormal];
     

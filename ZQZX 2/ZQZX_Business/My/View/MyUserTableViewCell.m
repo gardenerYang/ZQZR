@@ -21,19 +21,19 @@
 - (void)setupUI {
     _nameLb=[[UILabel alloc]init];
     _nameLb.font = [UIFont s16];
-    _nameLb.textColor=[UIColor blackColor];
+    _nameLb.textColor=kTitleColor;
     _nameLb.textAlignment=NSTextAlignmentLeft;
     [self addSubview:_nameLb];
     
     _phoneLb=[[UILabel alloc]init];
     _phoneLb.font = [UIFont s14];
-    _phoneLb.textColor=[UIColor blackColor];
+    _phoneLb.textColor=kTitleColor;
     _phoneLb.textAlignment=NSTextAlignmentCenter;
     [self addSubview:_phoneLb];
     
     _cityLb=[[UILabel alloc]init];
     _cityLb.font = [UIFont s14];
-    _cityLb.textColor=[UIColor blackColor];
+    _cityLb.textColor=kTitleColor;
     _cityLb.textAlignment=NSTextAlignmentRight;
     [self addSubview:_cityLb];
     [_nameLb mas_makeConstraints:^(MASConstraintMaker *make) {

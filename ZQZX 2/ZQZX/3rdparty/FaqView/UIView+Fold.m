@@ -50,7 +50,7 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
 //            subview.hidden = YES;
 //        }
 //    } else {
-//        animationContainer.backgroundColor = [UIColor blackColor];
+//        animationContainer.backgroundColor = kTitleColor;
 //    }
     
     [self addSubview:animationContainer];
@@ -75,12 +75,12 @@ typedef NS_ENUM(NSInteger, FoldDirection) {
     bottomHalfView.layer.transform = startingTransform;
     
     CAGradientLayer *topShadowLayer = [CAGradientLayer layer];
-//    topShadowLayer.colors = @[((id)[UIColor clearColor].CGColor), ((id)[UIColor blackColor].CGColor) ];
+//    topShadowLayer.colors = @[((id)[UIColor clearColor].CGColor), ((id)kTitleColor.CGColor) ];
     topShadowLayer.frame = topHalfView.bounds;
     [topHalfView.layer addSublayer:topShadowLayer];
     
     CAGradientLayer *bottomShadowLayer = [CAGradientLayer layer];
-//    bottomShadowLayer.colors = @[((id)[UIColor blackColor].CGColor), ((id)[UIColor clearColor].CGColor) ];
+//    bottomShadowLayer.colors = @[((id)kTitleColor.CGColor), ((id)[UIColor clearColor].CGColor) ];
     bottomShadowLayer.frame = bottomHalfView.bounds;
     [bottomHalfView.layer addSublayer:bottomShadowLayer];
     

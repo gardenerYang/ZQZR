@@ -39,7 +39,7 @@ const void *leftKey = "leftSelector";
     
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, 44)];
     titleLabel.text = title;
-    titleLabel.textColor = [UIColor blackColor];
+    titleLabel.textColor = kTitleColor;
     titleLabel.font = [UIFont boldSystemFontOfSize:18];
     self.navigationItem.titleView = titleLabel;
     

@@ -48,7 +48,7 @@
         if (cell == nil) {
             cell= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
             cell.textLabel.text= [NSString stringWithFormat:@"预览协议"];
-            cell.textLabel.textColor= [UIColor blackColor];
+            cell.textLabel.textColor= kTitleColor;
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator; 
         }
         return cell;

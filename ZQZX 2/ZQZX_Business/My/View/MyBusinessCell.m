@@ -24,7 +24,7 @@
     
     _titleLB=[[UILabel alloc]init];
     _titleLB.font = [UIFont s16];
-    _titleLB.textColor=[UIColor blackColor];
+    _titleLB.textColor=kTitleColor;
     _titleLB.textAlignment=NSTextAlignmentCenter;
     [self addSubview:_titleLB];
     

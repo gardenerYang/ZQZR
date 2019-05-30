@@ -46,7 +46,7 @@
     
     _setupBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_setupBtn setImage:[UIImage imageNamed:@"my_setup"] forState:UIControlStateNormal];
-    [_setupBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_setupBtn setTitleColor:kTitleColor forState:UIControlStateNormal];
     __weak typeof(self) wf = self;
 
     _setupBtn.titleLabel.font = [UIFont s14];

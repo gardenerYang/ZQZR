@@ -72,12 +72,12 @@
 
 - (UIColor *)titleTextColor {
     
-    return _titleTextColor ? _titleTextColor : [UIColor blackColor];
+    return _titleTextColor ? _titleTextColor : kTitleColor;
 }
 
 - (UIColor *)optionTextColor {
     
-    return _optionTextColor ? _optionTextColor : kUnSelected;
+    return _optionTextColor ? _optionTextColor : kLightGray;
 }
 
 @end

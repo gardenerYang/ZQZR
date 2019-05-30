@@ -39,7 +39,7 @@
         [_btn setImage:[UIImage imageNamed:imgArr[i]] forState:UIControlStateNormal];
         [_btn setImage:[UIImage imageNamed:selectArr[i]] forState:UIControlStateSelected];
         
-        [_btn setImagePositionWithType:SSImagePositionTypeTop spacing:5];
+        [_btn setImagePositionWithType:SSImagePositionTypeTop spacing:10];
         [_btn setTitleColor:color forState:UIControlStateNormal];
         
         _btn.titleLabel.font = [UIFont s14];
@@ -54,7 +54,7 @@
             make.top.mas_equalTo(0);
             make.left.mas_equalTo(i*(Iphonewidth/4));
             make.size.mas_equalTo(CGSizeMake(Iphonewidth/4, Iphonewidth/4));
-            make.bottom.mas_equalTo(-10);
+            make.bottom.mas_equalTo(0);
         }];
     }
 }

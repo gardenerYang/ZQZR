@@ -29,13 +29,13 @@
     
     _nameLb=[[UILabel alloc]init];
     _nameLb.font = [UIFont s16];
-    _nameLb.textColor=[UIColor blackColor];
+    _nameLb.textColor=kTitleColor;
     _nameLb.textAlignment=NSTextAlignmentLeft;
     [_BKView addSubview:_nameLb];
     
     _money1Lb=[[UILabel alloc]init];
     _money1Lb.font = [UIFont s14];
-    _money1Lb.textColor=[UIColor blackColor];
+    _money1Lb.textColor=kTitleColor;
     _money1Lb.textAlignment=NSTextAlignmentRight;
     [_BKView addSubview:_money1Lb];
     
@@ -46,7 +46,7 @@
     
     _money2Lb=[[UILabel alloc]init];
     _money2Lb.font = [UIFont s14];
-    _money2Lb.textColor=[UIColor blackColor];
+    _money2Lb.textColor=kTitleColor;
     _money2Lb.textAlignment=NSTextAlignmentRight;
     [_BKView addSubview:_money2Lb];
     

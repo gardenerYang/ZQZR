@@ -31,7 +31,7 @@
     
     _numLb=[[UILabel alloc]init];
     _numLb.font = [UIFont s16];
-    _numLb.textColor=[UIColor blackColor];
+    _numLb.textColor=kTitleColor;
     _numLb.textAlignment=NSTextAlignmentCenter;
     [self addSubview:_numLb];
     
@@ -43,7 +43,7 @@
     
     _moneyLB=[[UILabel alloc]init];
     _moneyLB.font = [UIFont s16];
-    _moneyLB.textColor=[UIColor blackColor];
+    _moneyLB.textColor=kTitleColor;
     _moneyLB.textAlignment=NSTextAlignmentRight;
     [self addSubview:_moneyLB];
     

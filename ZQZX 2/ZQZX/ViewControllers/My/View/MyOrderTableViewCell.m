@@ -44,7 +44,7 @@
     
     _titleLb=[[UILabel alloc]init];
     _titleLb.font = [UIFont s16];
-    _titleLb.textColor=[UIColor blackColor];
+    _titleLb.textColor=kTitleColor;
     _titleLb.textAlignment=NSTextAlignmentLeft;
     [self.BKView addSubview:_titleLb];
     
@@ -71,7 +71,7 @@
     
     _moneyLb=[[UILabel alloc]init];
     _moneyLb.font = [UIFont s16];
-    _moneyLb.textColor=[UIColor blackColor];
+    _moneyLb.textColor=kTitleColor;
     _moneyLb.textAlignment=NSTextAlignmentCenter;
     
     [self.BKView addSubview:_moneyLb];
@@ -85,7 +85,7 @@
     
     _numLb=[[UILabel alloc]init];
     _numLb.font = [UIFont s16];
-    _numLb.textColor=[UIColor blackColor];
+    _numLb.textColor=kTitleColor;
     _numLb.textAlignment=NSTextAlignmentCenter;
     [self.BKView addSubview:_numLb];
     
