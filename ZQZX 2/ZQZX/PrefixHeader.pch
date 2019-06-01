@@ -33,7 +33,7 @@
 #import "NSString+Validation.h"
 #import "UIView+Extension.h"
 #import "AppUserProfile.h"
-#import "YSSafeFramework.h"
+//#import "YSSafeFramework.h"
 #define IphoneHight [[UIScreen mainScreen] bounds].size.height
 #define Iphonewidth [[UIScreen mainScreen] bounds].size.width
 #define loginsLeftSpacing  Iphonewidth == 320 ? 10 : 40

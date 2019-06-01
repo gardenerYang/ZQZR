@@ -11,7 +11,7 @@
 #import "SuccessViewController.h"
 #import "HomeTableViewCell.h"
 #import "HomeFineTableViewCell.h"
-#import <SDCycleScrollView/SDCycleScrollView.h>
+#import "MSCycleScrollView.h"
 #import "HomeButtonTableViewCell.h"
 #import "InvestmentViewController.h"
 #import "HttpRequest+Home.h"
@@ -32,8 +32,9 @@
 #import "HomeIndustryNewsItemCell.h"
 #import "HomeVersionCell.h"
 #import "HttpRequest+Find.h"
-@interface HomeViewController ()<SDCycleScrollViewDelegate,ZJJTimeCountDownDelegate>
-@property (nonatomic, strong) SDCycleScrollView          *carouselView;
+#import "MSExampleDotView.h"
+@interface HomeViewController ()<MSCycleScrollViewDelegate,ZJJTimeCountDownDelegate>
+@property (nonatomic, strong) MSCycleScrollView          *carouselView;
 @property (nonatomic, strong) HomeModel          *homeModel;
 @property (nonatomic, strong) NSArray          *imgArr;
 @property (nonatomic,strong) ZJJTimeCountDown * countDown;
@@ -161,20 +162,24 @@
 }
 -(void)getImgData{
     __weak typeof(self) wf = self;
-    [HttpRequest achieveImgRequestsuccess:^(NSArray * _Nonnull imgArr) {
-          [MBProgressHUD hideHUD];
+    [HttpRequest achieveImgWithState:@"" Requestsuccess:^(NSArray * _Nonnull imgArr) {
+        [MBProgressHUD hideHUD];
         wf.imgArr = imgArr;
         NSLog(@"%@",[imgArr valueForKeyPath:@"imageUrl"]);
         NSArray *urlArr =  [imgArr valueForKeyPath:@"imageUrl"];
-        wf.carouselView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, Iphonewidth, 180) delegate:self placeholderImage:[UIImage imageNamed:@"Wload"]];
-        wf.carouselView.currentPageDotImage = [UIImage imageNamed:@"remind_btn"];
-        wf.carouselView.pageDotImage = [UIImage imageNamed:@"home_banner_select"];
-        wf.carouselView.imageURLStringsGroup = urlArr;
+
+        wf.carouselView = [MSCycleScrollView cycleViewWithFrame:CGRectMake(0, 0, Iphonewidth, 200) delegate:self placeholderImage:kBannerPlaceholderImage];
+        wf.carouselView.pageControlStyle = kMSPageContolStyleCustomer;
+        wf.carouselView.pageControlAliment = kMSPageContolAlimentCenter;
+        wf.carouselView.imageUrls = urlArr;
+        wf.carouselView.dotViewClass = [MSExampleDotView class];
+        wf.carouselView.pageControlDotSize = CGSizeMake(5, 5);
+        wf.carouselView.spacingBetweenDots = 10;
         self.tableView.tableHeaderView = wf.carouselView;
-        
     } failure:^(NSError * _Nonnull error) {
-        [MBProgressHUD showErrorMessage:error.localizedDescription];
+        
     }];
+
 }
 
 - (void)initUI {
@@ -325,7 +330,7 @@
     return 0.1f;
 }
 
-- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
+- (void)cycleScrollView:(MSCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
 {
     NSLog(@"---点击了第%ld张图片", (long)index);
     ImgModel *model = _imgArr[index];

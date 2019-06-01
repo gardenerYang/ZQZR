@@ -32,7 +32,6 @@
 }
 -(void)requestList{
     __weak typeof(self) wf = self;
-
     [HttpRequest getActiveDataRequestsuccess:^(NSArray * _Nonnull dataArr, NSString * _Nonnull message) {
         [wf.tableView stopReload];
         [self.dataListArr addObjectsFromArray:dataArr];

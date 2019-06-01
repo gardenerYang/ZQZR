@@ -72,6 +72,34 @@
 		84A7FD4F22A2309C00414E86 /* HomeCorporateNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD4622A2309B00414E86 /* HomeCorporateNewsCell.m */; };
 		84A7FD5022A2309C00414E86 /* HomeCorporateNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD4622A2309B00414E86 /* HomeCorporateNewsCell.m */; };
 		84A7FD5122A230C200414E86 /* HomeIndustryNewsItemCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD3F22A2309500414E86 /* HomeIndustryNewsItemCell.h */; };
+		84A7FD5422A24E9E00414E86 /* ProductHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD5322A24E9E00414E86 /* ProductHomeVC.m */; };
+		84A7FD5522A24E9E00414E86 /* ProductHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD5322A24E9E00414E86 /* ProductHomeVC.m */; };
+		84A7FD5922A2543500414E86 /* ProductCommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD5722A2543500414E86 /* ProductCommendCell.m */; };
+		84A7FD5A22A2543500414E86 /* ProductCommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD5722A2543500414E86 /* ProductCommendCell.m */; };
+		84A7FD6022A25B4A00414E86 /* ProductModuleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD5E22A25B4A00414E86 /* ProductModuleCell.m */; };
+		84A7FD6122A25B4A00414E86 /* ProductModuleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD5E22A25B4A00414E86 /* ProductModuleCell.m */; };
+		84A7FD6722A25D6F00414E86 /* ProductListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD6522A25D6F00414E86 /* ProductListCell.m */; };
+		84A7FD6822A25D6F00414E86 /* ProductListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD6522A25D6F00414E86 /* ProductListCell.m */; };
+		84A7FD6922A25D6F00414E86 /* ProductListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A7FD6622A25D6F00414E86 /* ProductListCell.xib */; };
+		84A7FD6A22A25D6F00414E86 /* ProductListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A7FD6622A25D6F00414E86 /* ProductListCell.xib */; };
+		84A7FD7A22A2739200414E86 /* FindHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD7922A2739200414E86 /* FindHomeVC.m */; };
+		84A7FD7B22A2739200414E86 /* FindHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD7922A2739200414E86 /* FindHomeVC.m */; };
+		84A7FD8822A277FB00414E86 /* MSCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD7F22A277FB00414E86 /* MSCycleScrollView.m */; };
+		84A7FD8922A277FB00414E86 /* MSCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD7F22A277FB00414E86 /* MSCycleScrollView.m */; };
+		84A7FD8A22A277FB00414E86 /* UIView+MSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD8022A277FB00414E86 /* UIView+MSExtension.m */; };
+		84A7FD8B22A277FB00414E86 /* UIView+MSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD8022A277FB00414E86 /* UIView+MSExtension.m */; };
+		84A7FD8C22A277FB00414E86 /* MSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD8122A277FB00414E86 /* MSCollectionViewCell.m */; };
+		84A7FD8D22A277FB00414E86 /* MSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD8122A277FB00414E86 /* MSCollectionViewCell.m */; };
+		84A7FD8E22A277FB00414E86 /* MSPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD8622A277FB00414E86 /* MSPageControl.m */; };
+		84A7FD8F22A277FB00414E86 /* MSPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD8622A277FB00414E86 /* MSPageControl.m */; };
+		84A7FD9022A277FB00414E86 /* MSAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD8722A277FB00414E86 /* MSAnimatedDotView.m */; };
+		84A7FD9122A277FB00414E86 /* MSAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD8722A277FB00414E86 /* MSAnimatedDotView.m */; };
+		84A7FD9422A2791200414E86 /* MSExampleDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD9322A2791100414E86 /* MSExampleDotView.m */; };
+		84A7FD9522A2791200414E86 /* MSExampleDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FD9322A2791100414E86 /* MSExampleDotView.m */; };
+		84A7FDAA22A2AB0B00414E86 /* ActivityListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FDA822A2AB0B00414E86 /* ActivityListCell.m */; };
+		84A7FDAB22A2AB0B00414E86 /* ActivityListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FDA822A2AB0B00414E86 /* ActivityListCell.m */; };
+		84A7FDAC22A2AB0B00414E86 /* ActivityListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A7FDA922A2AB0B00414E86 /* ActivityListCell.xib */; };
+		84A7FDAD22A2AB0B00414E86 /* ActivityListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A7FDA922A2AB0B00414E86 /* ActivityListCell.xib */; };
 		84A86D782227B6AE00BBE893 /* detailWebviewCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 84A86D752227B5F400BBE893 /* detailWebviewCell.h */; };
 		84A86D7B2227B71200BBE893 /* detailWebviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A86D7A2227B71200BBE893 /* detailWebviewCell.m */; };
 		84A86D7C2227B72F00BBE893 /* detailWebviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A86D7A2227B71200BBE893 /* detailWebviewCell.m */; };
@@ -596,6 +624,32 @@
 		84A7FD4422A2309900414E86 /* HomeIndustryNewsItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeIndustryNewsItemView.h; sourceTree = "<group>"; };
 		84A7FD4522A2309A00414E86 /* HomeVersionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVersionCell.m; sourceTree = "<group>"; };
 		84A7FD4622A2309B00414E86 /* HomeCorporateNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCorporateNewsCell.m; sourceTree = "<group>"; };
+		84A7FD5222A24E9E00414E86 /* ProductHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductHomeVC.h; sourceTree = "<group>"; };
+		84A7FD5322A24E9E00414E86 /* ProductHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductHomeVC.m; sourceTree = "<group>"; };
+		84A7FD5622A2543500414E86 /* ProductCommendCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductCommendCell.h; sourceTree = "<group>"; };
+		84A7FD5722A2543500414E86 /* ProductCommendCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductCommendCell.m; sourceTree = "<group>"; };
+		84A7FD5D22A25B4A00414E86 /* ProductModuleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductModuleCell.h; sourceTree = "<group>"; };
+		84A7FD5E22A25B4A00414E86 /* ProductModuleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductModuleCell.m; sourceTree = "<group>"; };
+		84A7FD6422A25D6F00414E86 /* ProductListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListCell.h; sourceTree = "<group>"; };
+		84A7FD6522A25D6F00414E86 /* ProductListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListCell.m; sourceTree = "<group>"; };
+		84A7FD6622A25D6F00414E86 /* ProductListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListCell.xib; sourceTree = "<group>"; };
+		84A7FD7822A2739200414E86 /* FindHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindHomeVC.h; sourceTree = "<group>"; };
+		84A7FD7922A2739200414E86 /* FindHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindHomeVC.m; sourceTree = "<group>"; };
+		84A7FD7D22A277FB00414E86 /* MSCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCollectionViewCell.h; sourceTree = "<group>"; };
+		84A7FD7E22A277FB00414E86 /* UIView+MSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MSExtension.h"; sourceTree = "<group>"; };
+		84A7FD7F22A277FB00414E86 /* MSCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCycleScrollView.m; sourceTree = "<group>"; };
+		84A7FD8022A277FB00414E86 /* UIView+MSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MSExtension.m"; sourceTree = "<group>"; };
+		84A7FD8122A277FB00414E86 /* MSCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCollectionViewCell.m; sourceTree = "<group>"; };
+		84A7FD8222A277FB00414E86 /* MSCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCycleScrollView.h; sourceTree = "<group>"; };
+		84A7FD8422A277FB00414E86 /* MSPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPageControl.h; sourceTree = "<group>"; };
+		84A7FD8522A277FB00414E86 /* MSAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAnimatedDotView.h; sourceTree = "<group>"; };
+		84A7FD8622A277FB00414E86 /* MSPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPageControl.m; sourceTree = "<group>"; };
+		84A7FD8722A277FB00414E86 /* MSAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAnimatedDotView.m; sourceTree = "<group>"; };
+		84A7FD9222A2791100414E86 /* MSExampleDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSExampleDotView.h; sourceTree = "<group>"; };
+		84A7FD9322A2791100414E86 /* MSExampleDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSExampleDotView.m; sourceTree = "<group>"; };
+		84A7FDA722A2AB0B00414E86 /* ActivityListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityListCell.h; sourceTree = "<group>"; };
+		84A7FDA822A2AB0B00414E86 /* ActivityListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityListCell.m; sourceTree = "<group>"; };
+		84A7FDA922A2AB0B00414E86 /* ActivityListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityListCell.xib; sourceTree = "<group>"; };
 		84A86D752227B5F400BBE893 /* detailWebviewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = detailWebviewCell.h; sourceTree = "<group>"; };
 		84A86D7A2227B71200BBE893 /* detailWebviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailWebviewCell.m; sourceTree = "<group>"; };
 		84ABD71D21F17BD400D28E5A /* SZQuestionCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZQuestionCheckBox.m; sourceTree = "<group>"; };
@@ -1156,6 +1210,43 @@
 			path = LCStarRatingView;
 			sourceTree = "<group>";
 		};
+		84A7FD7C22A277FB00414E86 /* MSCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				84A7FD9222A2791100414E86 /* MSExampleDotView.h */,
+				84A7FD9322A2791100414E86 /* MSExampleDotView.m */,
+				84A7FD7D22A277FB00414E86 /* MSCollectionViewCell.h */,
+				84A7FD7E22A277FB00414E86 /* UIView+MSExtension.h */,
+				84A7FD7F22A277FB00414E86 /* MSCycleScrollView.m */,
+				84A7FD8022A277FB00414E86 /* UIView+MSExtension.m */,
+				84A7FD8122A277FB00414E86 /* MSCollectionViewCell.m */,
+				84A7FD8222A277FB00414E86 /* MSCycleScrollView.h */,
+				84A7FD8322A277FB00414E86 /* PageControl */,
+			);
+			path = MSCycleScrollView;
+			sourceTree = "<group>";
+		};
+		84A7FD8322A277FB00414E86 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				84A7FD8422A277FB00414E86 /* MSPageControl.h */,
+				84A7FD8522A277FB00414E86 /* MSAnimatedDotView.h */,
+				84A7FD8622A277FB00414E86 /* MSPageControl.m */,
+				84A7FD8722A277FB00414E86 /* MSAnimatedDotView.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		84A7FDA622A2AAF000414E86 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				84A7FDA722A2AB0B00414E86 /* ActivityListCell.h */,
+				84A7FDA822A2AB0B00414E86 /* ActivityListCell.m */,
+				84A7FDA922A2AB0B00414E86 /* ActivityListCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		84ABD71C21F17BD400D28E5A /* SZQuestionCheckBox */ = {
 			isa = PBXGroup;
 			children = (
@@ -1350,6 +1441,15 @@
 				84A86D7A2227B71200BBE893 /* detailWebviewCell.m */,
 				8418B4AB223A629500DA2D89 /* HomeTimeLabel.h */,
 				8418B4AC223A629500DA2D89 /* HomeTimeLabel.m */,
+				84A7FD4022A2309500414E86 /* HomeCorporateNewsCell.h */,
+				84A7FD4622A2309B00414E86 /* HomeCorporateNewsCell.m */,
+				84A7FD3E22A2309400414E86 /* HomeCorporateNewsCell.xib */,
+				84A7FD3F22A2309500414E86 /* HomeIndustryNewsItemCell.h */,
+				84A7FD4322A2309800414E86 /* HomeIndustryNewsItemCell.m */,
+				84A7FD4422A2309900414E86 /* HomeIndustryNewsItemView.h */,
+				84A7FD4122A2309600414E86 /* HomeIndustryNewsItemView.m */,
+				84A7FD4222A2309700414E86 /* HomeVersionCell.h */,
+				84A7FD4522A2309A00414E86 /* HomeVersionCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1634,6 +1734,13 @@
 			children = (
 				F71FD55D217B331300B648BE /* ActivityTableViewCell.h */,
 				F71FD55E217B331300B648BE /* ActivityTableViewCell.m */,
+				84A7FD5622A2543500414E86 /* ProductCommendCell.h */,
+				84A7FD5722A2543500414E86 /* ProductCommendCell.m */,
+				84A7FD5D22A25B4A00414E86 /* ProductModuleCell.h */,
+				84A7FD5E22A25B4A00414E86 /* ProductModuleCell.m */,
+				84A7FD6422A25D6F00414E86 /* ProductListCell.h */,
+				84A7FD6522A25D6F00414E86 /* ProductListCell.m */,
+				84A7FD6622A25D6F00414E86 /* ProductListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1765,7 +1872,7 @@
 				F72C710B216F135D0042223E /* PublicClass */,
 				F72C70E9216DD6E30042223E /* Login */,
 				F72C70CB216DC3270042223E /* My */,
-				F72C70CA216DC31A0042223E /* Activity */,
+				F72C70CA216DC31A0042223E /* Product */,
 				F72C70C9216DC2F40042223E /* Find */,
 				F72C70C8216DC2EB0042223E /* Home */,
 			);
@@ -1783,15 +1890,6 @@
 				F711B7C021842E190083CA35 /* HomeListViewController.m */,
 				F71FD48121749C4200B648BE /* InvestmentViewController.h */,
 				F71FD48221749C4200B648BE /* InvestmentViewController.m */,
-				84A7FD4022A2309500414E86 /* HomeCorporateNewsCell.h */,
-				84A7FD4622A2309B00414E86 /* HomeCorporateNewsCell.m */,
-				84A7FD3E22A2309400414E86 /* HomeCorporateNewsCell.xib */,
-				84A7FD3F22A2309500414E86 /* HomeIndustryNewsItemCell.h */,
-				84A7FD4322A2309800414E86 /* HomeIndustryNewsItemCell.m */,
-				84A7FD4422A2309900414E86 /* HomeIndustryNewsItemView.h */,
-				84A7FD4122A2309600414E86 /* HomeIndustryNewsItemView.m */,
-				84A7FD4222A2309700414E86 /* HomeVersionCell.h */,
-				84A7FD4522A2309A00414E86 /* HomeVersionCell.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1799,6 +1897,9 @@
 		F72C70C9216DC2F40042223E /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				84A7FDA622A2AAF000414E86 /* view */,
+				84A7FD7822A2739200414E86 /* FindHomeVC.h */,
+				84A7FD7922A2739200414E86 /* FindHomeVC.m */,
 				F71FD49C2175C16E00B648BE /* UIViewController+WMPageController.h */,
 				F71FD49B2175C16E00B648BE /* UIViewController+WMPageController.m */,
 				F71FD4992175C16000B648BE /* WMPanGestureRecognizer.h */,
@@ -1811,14 +1912,16 @@
 			path = Find;
 			sourceTree = "<group>";
 		};
-		F72C70CA216DC31A0042223E /* Activity */ = {
+		F72C70CA216DC31A0042223E /* Product */ = {
 			isa = PBXGroup;
 			children = (
 				F71FD55C217B32EF00B648BE /* View */,
 				F72C70D5216DC5070042223E /* ActivityViewController.h */,
 				F72C70D6216DC5070042223E /* ActivityViewController.m */,
+				84A7FD5222A24E9E00414E86 /* ProductHomeVC.h */,
+				84A7FD5322A24E9E00414E86 /* ProductHomeVC.m */,
 			);
-			path = Activity;
+			path = Product;
 			sourceTree = "<group>";
 		};
 		F72C70CB216DC3270042223E /* My */ = {
@@ -1920,6 +2023,7 @@
 		F72C70DF216DCB510042223E /* 3rdparty */ = {
 			isa = PBXGroup;
 			children = (
+				84A7FD7C22A277FB00414E86 /* MSCycleScrollView */,
 				8455B03E2203240E007660F9 /* YSSafeFramwork */,
 				849F8A5D21F97EA0006FEA21 /* LCStarRatingView */,
 				84ABD71C21F17BD400D28E5A /* SZQuestionCheckBox */,
@@ -2339,6 +2443,7 @@
 				F72C7099216DA8DF0042223E /* LaunchScreen.storyboard in Resources */,
 				F727C55E2170783500E7DD5D /* address.plist in Resources */,
 				84ECB91522684F15009B165D /* ActivityAlertView.xib in Resources */,
+				84A7FDAC22A2AB0B00414E86 /* ActivityListCell.xib in Resources */,
 				849F8A5C21F97134006FEA21 /* EvaluationResultsVC.xib in Resources */,
 				84ABD72D21F17BD400D28E5A /* resource.bundle in Resources */,
 				F71FD4A62176DA8000B648BE /* PR_project_ok@2x.png in Resources */,
@@ -2352,6 +2457,7 @@
 				84ABD73521F1D69400D28E5A /* QAHeaderView.xib in Resources */,
 				84372EC822002F9700BA25A2 /* CapitalRecordTableViewCell.xib in Resources */,
 				F72C7094216DA8DE0042223E /* Main.storyboard in Resources */,
+				84A7FD6922A25D6F00414E86 /* ProductListCell.xib in Resources */,
 				84EDE324221A53520027E9AB /* HomeUpdateVC.xib in Resources */,
 				84C65C3221F5B8B800143AA2 /* OrderEarningsDetails.xib in Resources */,
 				848A583221F7E71B006D2092 /* InvestorConfirmation.xib in Resources */,
@@ -2382,10 +2488,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A7FD4822A2309C00414E86 /* HomeCorporateNewsCell.xib in Resources */,
+				84A7FD6A22A25D6F00414E86 /* ProductListCell.xib in Resources */,
 				846715D3226C95370074D998 /* RemindListFooterView.xib in Resources */,
 				F7FD2318217D97EE003C7563 /* KSGuaidProperty.plist in Resources */,
 				F7FD2319217D97EE003C7563 /* LaunchScreen.storyboard in Resources */,
 				F7FD231A217D97EE003C7563 /* address.plist in Resources */,
+				84A7FDAD22A2AB0B00414E86 /* ActivityListCell.xib in Resources */,
 				F7FD231B217D97EE003C7563 /* PR_project_ok@2x.png in Resources */,
 				F7FD231D217D97EE003C7563 /* choice_top@2x.png in Resources */,
 				F7FD231E217D97EE003C7563 /* choice@2x.png in Resources */,
@@ -2404,7 +2512,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZQZX/Pods-ZQZX-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ZQZX/Pods-ZQZX-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
@@ -2421,7 +2529,6 @@
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/PPNumberButton/PPNumberButton.framework",
 				"${BUILT_PRODUCTS_DIR}/Qiniu/Qiniu.framework",
-				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
 				"${BUILT_PRODUCTS_DIR}/WMPageController/WMPageController.framework",
@@ -2445,7 +2552,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PPNumberButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Qiniu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WMPageController.framework",
@@ -2453,7 +2559,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZQZX/Pods-ZQZX-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZQZX/Pods-ZQZX-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		30A79905E1DA2DBBFC72A8D0 /* [CP] Check Pods Manifest.lock */ = {
@@ -2498,7 +2604,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZQZX_Business/Pods-ZQZX_Business-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ZQZX_Business/Pods-ZQZX_Business-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
@@ -2515,7 +2621,6 @@
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/PPNumberButton/PPNumberButton.framework",
 				"${BUILT_PRODUCTS_DIR}/Qiniu/Qiniu.framework",
-				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
 				"${BUILT_PRODUCTS_DIR}/WMPageController/WMPageController.framework",
@@ -2539,7 +2644,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PPNumberButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Qiniu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WMPageController.framework",
@@ -2547,7 +2651,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZQZX_Business/Pods-ZQZX_Business-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZQZX_Business/Pods-ZQZX_Business-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2576,6 +2680,7 @@
 				F72C70C6216DC1A80042223E /* ZHNavigationViewController.m in Sources */,
 				8406DD6F21F0594500C6FC85 /* TicketInfomationCell.m in Sources */,
 				F711B7BD2184223F0083CA35 /* WebviewViewController.m in Sources */,
+				84A7FD8A22A277FB00414E86 /* UIView+MSExtension.m in Sources */,
 				F71FD49121759E9E00B648BE /* DetailsHeadView.m in Sources */,
 				84A7FD4922A2309C00414E86 /* HomeIndustryNewsItemView.m in Sources */,
 				F71FD548217B10D600B648BE /* ReimbursementplanVC.m in Sources */,
@@ -2607,6 +2712,7 @@
 				F71FD4B02176FF7300B648BE /* AppDelegate+Guaid.m in Sources */,
 				8418B4AD223A629500DA2D89 /* HomeTimeLabel.m in Sources */,
 				F71FD4B82178246600B648BE /* AppUserProfile.m in Sources */,
+				84A7FD9022A277FB00414E86 /* MSAnimatedDotView.m in Sources */,
 				84EDE3202216C91D0027E9AB /* HomeUpdateVC.m in Sources */,
 				F711B408217EFFE00083CA35 /* PerformanceStatisticsVC.m in Sources */,
 				F7E04A522187FA55001E234F /* AliPayViews.m in Sources */,
@@ -2653,6 +2759,7 @@
 				F727C5602170783500E7DD5D /* CityPickerViewController.m in Sources */,
 				84A7FD4F22A2309C00414E86 /* HomeCorporateNewsCell.m in Sources */,
 				F71FD49A2175C16000B648BE /* WMPanGestureRecognizer.m in Sources */,
+				84A7FD7A22A2739200414E86 /* FindHomeVC.m in Sources */,
 				F71FD4BE2178260700B648BE /* NSString+Validation.m in Sources */,
 				F71FD557217B252D00B648BE /* MymessageViewController.m in Sources */,
 				843A07F221F171C00093F256 /* RiskAssessmentViewController.m in Sources */,
@@ -2661,12 +2768,14 @@
 				F7C4C131218C348600734E3F /* ZHPaymentTableViewCell.m in Sources */,
 				840B6F7321F02D7C0029ED25 /* TicketInformationVC.m in Sources */,
 				F7FD2347217DAB6E003C7563 /* MyBusinessHeadView.m in Sources */,
+				84A7FDAA22A2AB0B00414E86 /* ActivityListCell.m in Sources */,
 				F7FD234F217DAD87003C7563 /* MyBusinessCell.m in Sources */,
 				F73D49BD2190386C00DD27D2 /* PlanDetailsModel.m in Sources */,
 				F72C710E216F13920042223E /* SuccessViewController.m in Sources */,
 				F71FD47E21749BD200B648BE /* QZSortCell.m in Sources */,
 				F711B78721815D890083CA35 /* HttpRequest+loginAndRegister.m in Sources */,
 				84A7FD4B22A2309C00414E86 /* HomeIndustryNewsItemCell.m in Sources */,
+				84A7FD8C22A277FB00414E86 /* MSCollectionViewCell.m in Sources */,
 				84ECB91322684F06009B165D /* ActivityAlertView.m in Sources */,
 				84A7FD4D22A2309C00414E86 /* HomeVersionCell.m in Sources */,
 				F71FD5162179CB4500B648BE /* TipsViewController.m in Sources */,
@@ -2674,11 +2783,13 @@
 				846715CB22696D660074D998 /* UIButton+YSTool.m in Sources */,
 				F7C4C12D218C323500734E3F /* BusinessCardViewController.m in Sources */,
 				84ECB91822687FE9009B165D /* HomeNotificationView.m in Sources */,
+				84A7FD6722A25D6F00414E86 /* ProductListCell.m in Sources */,
 				F71FD551217B190100B648BE /* HeadswitchBtnView.m in Sources */,
 				F71FD466217488F100B648BE /* HomeButtonTableViewCell.m in Sources */,
 				F71FD520217AC49C00B648BE /* ReplacePhoneViewController.m in Sources */,
 				F711B7DA2184505B0083CA35 /* WMStickyPageController.m in Sources */,
 				F711B7B9218413250083CA35 /* MyOrderModel.m in Sources */,
+				84A7FD8822A277FB00414E86 /* MSCycleScrollView.m in Sources */,
 				F72C7111216F28110042223E /* RegisterViewController.m in Sources */,
 				8455B0412203240F007660F9 /* YSSafeFramework.m in Sources */,
 				F711B401217EFE6B0083CA35 /* MyBusinessViewController.m in Sources */,
@@ -2693,12 +2804,14 @@
 				F711B7D82184505B0083CA35 /* WMMagicScrollView.m in Sources */,
 				84372EC722002F9700BA25A2 /* CapitalRecordTableViewCell.m in Sources */,
 				F71FD5102179C25200B648BE /* MyFinancialManagerVC.m in Sources */,
+				84A7FD5422A24E9E00414E86 /* ProductHomeVC.m in Sources */,
 				F7E04A7121885C1E001E234F /* QNModel.m in Sources */,
 				F71FD45C2174362E00B648BE /* NSNotificationCenter+Util.m in Sources */,
 				F7C4C142218D843000734E3F /* BusinessCertificationVC.m in Sources */,
 				F72C70E2216DCB900042223E /* UIButton+SSEdgeInsets.m in Sources */,
 				F711B7C121842E190083CA35 /* HomeListViewController.m in Sources */,
 				F72C70F6216DE2370042223E /* ZHLoginTextFieldView.m in Sources */,
+				84A7FD8E22A277FB00414E86 /* MSPageControl.m in Sources */,
 				F7FD236E217DDC70003C7563 /* DVPieCenterView.m in Sources */,
 				F73D49B9219034EF00DD27D2 /* ReimbursementplanDetailsVC.m in Sources */,
 				F711B79D2182D8E30083CA35 /* HomeModel.m in Sources */,
@@ -2742,6 +2855,7 @@
 				F72C7103216EF3790042223E /* RDCountDownButton.m in Sources */,
 				F71FD4F52179740900B648BE /* MyTableViewCell.m in Sources */,
 				F72C7106216EFD1F0042223E /* ForgotPasswordNextViewController.m in Sources */,
+				84A7FD9422A2791200414E86 /* MSExampleDotView.m in Sources */,
 				8406DD7921F0734900C6FC85 /* HZWaitingView.m in Sources */,
 				F711B80A218472950083CA35 /* InvestmentdetailsVC.m in Sources */,
 				F71FD54B217B12F700B648BE /* PlanViewController.m in Sources */,
@@ -2749,6 +2863,7 @@
 				F71FD51D2179E02E00B648BE /* ZHSwitch.m in Sources */,
 				F7E04A752188663F001E234F /* MyRecordModel.m in Sources */,
 				F71FD50D2179BFDB00B648BE /* AddBankCardViewController.m in Sources */,
+				84A7FD5922A2543500414E86 /* ProductCommendCell.m in Sources */,
 				846715CF226C952F0074D998 /* RemindListFooterView.m in Sources */,
 				F71FD50A2179B7AB00B648BE /* BankCardTableViewCell.m in Sources */,
 				F71FD45321742D0000B648BE /* NoDataView.m in Sources */,
@@ -2788,6 +2903,7 @@
 				F7C4C14A218D993800734E3F /* BusinessForgotPasswordViewController.m in Sources */,
 				F72C70EC216DD6FB0042223E /* LoginViewController.m in Sources */,
 				F71FD4EB2178783B00B648BE /* JMHUDView.m in Sources */,
+				84A7FD6022A25B4A00414E86 /* ProductModuleCell.m in Sources */,
 				F71FD4B22176FF7300B648BE /* KSGuaidViewCell.m in Sources */,
 				F71FD4D6217869D900B648BE /* NetworkManager+Base.m in Sources */,
 				F71FD4F221788EBD00B648BE /* MyHeadView.m in Sources */,
@@ -2848,6 +2964,7 @@
 				8455B02B22006BD1007660F9 /* CapitalRecordTableViewCell.m in Sources */,
 				8455B02A22006BC4007660F9 /* SZQuestionCheckBox.m in Sources */,
 				84A7FD4A22A2309C00414E86 /* HomeIndustryNewsItemView.m in Sources */,
+				84A7FD7B22A2739200414E86 /* FindHomeVC.m in Sources */,
 				8455B02922006B80007660F9 /* QAModel.h in Sources */,
 				F7C4C13B218D736000734E3F /* BusinessSetUpViewController.m in Sources */,
 				F7E04A762188663F001E234F /* MyRecordModel.m in Sources */,
@@ -2889,16 +3006,20 @@
 				84A7FD5022A2309C00414E86 /* HomeCorporateNewsCell.m in Sources */,
 				F7FD2379217EC743003C7563 /* InvestmentManagementVC.m in Sources */,
 				F7FD22BB217D97EE003C7563 /* HSFTimeNumberView.m in Sources */,
+				84A7FD9122A277FB00414E86 /* MSAnimatedDotView.m in Sources */,
 				F7FD2353217DB006003C7563 /* StretchingFlowLayout.m in Sources */,
 				F7E04A7E2189927B001E234F /* ReimbursementModel.m in Sources */,
+				84A7FD6122A25B4A00414E86 /* ProductModuleCell.m in Sources */,
 				F7FD22BC217D97EE003C7563 /* FindChildrenViewController.m in Sources */,
 				F7FD22BD217D97EE003C7563 /* RegisterNextViewController.m in Sources */,
+				84A7FD6822A25D6F00414E86 /* ProductListCell.m in Sources */,
 				F7E04A262186E977001E234F /* ProductDetailsModel.m in Sources */,
 				F7FD22BE217D97EE003C7563 /* AppDelegate+Guaid.m in Sources */,
 				F7FD22BF217D97EE003C7563 /* AppUserProfile.m in Sources */,
 				F711B534217F0D940083CA35 /* MyBusinessOrderdetailsVC.m in Sources */,
 				F7FD22C0217D97EE003C7563 /* SRActionSheet.m in Sources */,
 				F7FD22C1217D97EE003C7563 /* HttpRequest+Home.m in Sources */,
+				84A7FD8D22A277FB00414E86 /* MSCollectionViewCell.m in Sources */,
 				F7FD22C2217D97EE003C7563 /* MyNavView.m in Sources */,
 				F7FD22C3217D97EE003C7563 /* BaseTableViewController.m in Sources */,
 				F7FD22C4217D97EE003C7563 /* UIViewController+Navigation.m in Sources */,
@@ -2912,6 +3033,7 @@
 				F7C4C102218AE5B000734E3F /* MyUserModel.m in Sources */,
 				F7FD22C9217D97EE003C7563 /* InvestmentViewController.m in Sources */,
 				F7FD22CA217D97EE003C7563 /* UIImage+Util.m in Sources */,
+				84A7FD9522A2791200414E86 /* MSExampleDotView.m in Sources */,
 				F7FD237C217EC8BD003C7563 /* InvestmentManagementCell.m in Sources */,
 				F7FD22CB217D97EE003C7563 /* HttpResponse.m in Sources */,
 				F7FD22CC217D97EE003C7563 /* SetUpViewController.m in Sources */,
@@ -2926,6 +3048,7 @@
 				F7FD22D0217D97EE003C7563 /* OrderdetailsCell2.m in Sources */,
 				F7FD22D1217D97EE003C7563 /* OrderdetailsCell1.m in Sources */,
 				F7FD22D2217D97EE003C7563 /* NSError+Util.m in Sources */,
+				84A7FD8922A277FB00414E86 /* MSCycleScrollView.m in Sources */,
 				F7C4C135218D55FA00734E3F /* CardModel.m in Sources */,
 				F7FD22D3217D97EE003C7563 /* HomeFineTableViewCell.m in Sources */,
 				F7FD22D4217D97EE003C7563 /* UIViewController+DismissKeyboard.m in Sources */,
@@ -2992,12 +3115,14 @@
 				F711B7E7218461A10083CA35 /* ExamineViewController.m in Sources */,
 				F7FD2371217EBBBF003C7563 /* StatisticsTableViewCell.m in Sources */,
 				F7C4C14F218D995F00734E3F /* BusinessForgotPasswordNextVC.m in Sources */,
+				84A7FD8B22A277FB00414E86 /* UIView+MSExtension.m in Sources */,
 				F7FD22F1217D97EE003C7563 /* SecuritySettingVC.m in Sources */,
 				F7FD22F2217D97EE003C7563 /* UIColor+Util.m in Sources */,
 				F7FD22F3217D97EE003C7563 /* PhotoTableViewCell.m in Sources */,
 				F7FD22F4217D97EE003C7563 /* CapitalRecordViewController.m in Sources */,
 				F7FD22F5217D97EE003C7563 /* MyOrderTableViewCell.m in Sources */,
 				F7C4C147218D8D2300734E3F /* BusinessReplacePhoneVC.m in Sources */,
+				84A7FD8F22A277FB00414E86 /* MSPageControl.m in Sources */,
 				84A7FD4E22A2309C00414E86 /* HomeVersionCell.m in Sources */,
 				F7C4C10A218AFBD500734E3F /* BusinessInvestmentModel.m in Sources */,
 				F7FD22F6217D97EE003C7563 /* OrderdetailsViewController.m in Sources */,
@@ -3022,6 +3147,7 @@
 				F7FD2301217D97EE003C7563 /* AppDelegate.m in Sources */,
 				F7FD234C217DACB5003C7563 /* UICollectionView+Register.m in Sources */,
 				F7FD2302217D97EE003C7563 /* UIViewController+WMPageController.m in Sources */,
+				84A7FD5A22A2543500414E86 /* ProductCommendCell.m in Sources */,
 				F7FD236A217DDAB7003C7563 /* DVPieCenterView.m in Sources */,
 				F7FD2303217D97EE003C7563 /* WSTextView.m in Sources */,
 				F7E04A572187FA55001E234F /* KeychainItemWrapper.m in Sources */,
@@ -3046,9 +3172,11 @@
 				F7FD230F217D97EE003C7563 /* CertificationViewController.m in Sources */,
 				F7FD2310217D97EE003C7563 /* LoginViewController.m in Sources */,
 				F7FD2311217D97EE003C7563 /* JMHUDView.m in Sources */,
+				84A7FDAB22A2AB0B00414E86 /* ActivityListCell.m in Sources */,
 				F7FD2312217D97EE003C7563 /* KSGuaidViewCell.m in Sources */,
 				F7FD2313217D97EE003C7563 /* NetworkManager+Base.m in Sources */,
 				F7C4C0FD218AD78800734E3F /* GTMBase64.m in Sources */,
+				84A7FD5522A24E9E00414E86 /* ProductHomeVC.m in Sources */,
 				F711B7BE2184223F0083CA35 /* WebviewViewController.m in Sources */,
 				F7FD2314217D97EE003C7563 /* MyHeadView.m in Sources */,
 			);
@@ -3260,10 +3388,6 @@
 					"-framework",
 					"\"Qiniu\"",
 					"-framework",
-					"\"SDCycleScrollView\"",
-					"-framework",
-					"\"SDWebImage\"",
-					"-framework",
 					"\"TZImagePickerController\"",
 					"-framework",
 					"\"WMPageController\"",
@@ -3330,10 +3454,6 @@
 					"\"PPNumberButton\"",
 					"-framework",
 					"\"Qiniu\"",
-					"-framework",
-					"\"SDCycleScrollView\"",
-					"-framework",
-					"\"SDWebImage\"",
 					"-framework",
 					"\"TZImagePickerController\"",
 					"-framework",
@@ -3421,7 +3541,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A2704F160F77F8322DC5C511 /* Pods-ZQZX_Business.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Business";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -3434,7 +3554,12 @@
 					"COCOAPODS=1",
 					BusinessTag,
 				);
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/build/include";
+				HEADER_SEARCH_PATHS = (
+					"<Multiple",
+					"values>",
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/TZImagePickerController/TZImagePickerController.framework/Headers\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ZQZX_Business/BusinessInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3479,12 +3604,6 @@
 					"-framework",
 					"\"Qiniu\"",
 					"-framework",
-					"\"SDCycleScrollView\"",
-					"-framework",
-					"\"SDWebImage\"",
-					"-framework",
-					"\"TZImagePickerController\"",
-					"-framework",
 					"\"WMPageController\"",
 					"-all_load",
 				);
@@ -3500,7 +3619,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DFDA36B6F999C122BA7B1733 /* Pods-ZQZX_Business.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Business";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -3513,7 +3632,12 @@
 					"COCOAPODS=1",
 					BusinessTag,
 				);
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/build/include";
+				HEADER_SEARCH_PATHS = (
+					"<Multiple",
+					"values>",
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/TZImagePickerController/TZImagePickerController.framework/Headers\"",
+				);
 				"HEADER_SEARCH_PATHS[arch=*]" = "";
 				INFOPLIST_FILE = "$(SRCROOT)/ZQZX_Business/BusinessInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3558,12 +3682,6 @@
 					"\"PPNumberButton\"",
 					"-framework",
 					"\"Qiniu\"",
-					"-framework",
-					"\"SDCycleScrollView\"",
-					"-framework",
-					"\"SDWebImage\"",
-					"-framework",
-					"\"TZImagePickerController\"",
 					"-framework",
 					"\"WMPageController\"",
 					"-all_load",

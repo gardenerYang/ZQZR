@@ -8,9 +8,11 @@
 
 #import "HttpRequest+Home.h"
 @implementation HttpRequest (Home)
-+(void)achieveImgRequestsuccess:(void (^)(NSArray *imgArr))success  failure:(void (^)(NSError *error))failure{
-    [HttpRequest post:http_home_getSysScrollImages param:nil success:^(HttpResponse *data,NSString *message) {
++(void)achieveImgWithState:(NSString*)state Requestsuccess:(void (^)(NSArray *imgArr))success  failure:(void (^)(NSError *error))failure{
+    [HttpRequest post:http_home_getSysScrollImages param:@{@"bannerState":state} success:^(HttpResponse *data,NSString *message) {
         NSArray *arr = [ImgModel mj_objectArrayWithKeyValuesArray:data.data];
+        NSLog(@"哈哈哈-----------%@",arr);
+
         if (success) {
             success(arr);
         }

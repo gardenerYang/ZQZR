@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="ProductListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="product_piaoju" translatesAutoresizingMaskIntoConstraints="NO" id="c6P-jY-oJA">
+                        <rect key="frame" x="15" y="0.0" width="290" height="79.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="募集时间:----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGq-g6-171">
+                        <rect key="frame" x="15" y="89.5" width="76" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new" translatesAutoresizingMaskIntoConstraints="NO" id="lxD-yn-uIS">
+                        <rect key="frame" x="258" y="0.0" width="47" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="29N-Xl-Gbc"/>
+                            <constraint firstAttribute="width" constant="47" id="dRR-WH-z3d"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可预约金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GR-4L-KXo">
+                        <rect key="frame" x="243" y="89.5" width="62" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c6P-jY-oJA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="9Py-uN-Wr4"/>
+                    <constraint firstAttribute="bottom" secondItem="6GR-4L-KXo" secondAttribute="bottom" constant="15" id="Aow-Qi-pIL"/>
+                    <constraint firstAttribute="trailing" secondItem="lxD-yn-uIS" secondAttribute="trailing" constant="15" id="Hf6-cI-krL"/>
+                    <constraint firstItem="EGq-g6-171" firstAttribute="top" secondItem="c6P-jY-oJA" secondAttribute="bottom" constant="10" id="K11-Lx-vZo"/>
+                    <constraint firstItem="EGq-g6-171" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="XJZ-BU-5Xy"/>
+                    <constraint firstAttribute="bottom" secondItem="EGq-g6-171" secondAttribute="bottom" constant="15" id="ZNW-eO-OZf"/>
+                    <constraint firstAttribute="trailing" secondItem="c6P-jY-oJA" secondAttribute="trailing" constant="15" id="adf-yt-spg"/>
+                    <constraint firstItem="lxD-yn-uIS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cDN-DY-DF9"/>
+                    <constraint firstAttribute="trailing" secondItem="6GR-4L-KXo" secondAttribute="trailing" constant="15" id="dR6-2Z-gJo"/>
+                    <constraint firstItem="c6P-jY-oJA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rgG-os-fHs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="imageV" destination="c6P-jY-oJA" id="MUL-ow-0ho"/>
+                <outlet property="stateImageV" destination="lxD-yn-uIS" id="Qhw-ET-KHO"/>
+                <outlet property="timeLabel" destination="EGq-g6-171" id="qdz-3A-K4Z"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="188.90554722638683"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="new" width="47" height="22.5"/>
+        <image name="product_piaoju" width="330" height="220"/>
+    </resources>
+</document>

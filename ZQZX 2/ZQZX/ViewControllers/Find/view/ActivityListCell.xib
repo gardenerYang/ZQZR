@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="KGk-i7-Jjw" customClass="ActivityListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="product_piaoju" translatesAutoresizingMaskIntoConstraints="NO" id="1jh-W2-RLJ">
+                        <rect key="frame" x="15" y="0.0" width="290" height="80.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动倒计时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThN-21-Psb">
+                        <rect key="frame" x="15" y="95.5" width="62" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AIr-ZW-wI9">
+                        <rect key="frame" x="205" y="95.5" width="100" height="15"/>
+                        <color key="backgroundColor" red="1" green="0.40784313729999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="ZHy-2g-TMc"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new" translatesAutoresizingMaskIntoConstraints="NO" id="xjv-sD-OPQ">
+                        <rect key="frame" x="258" y="0.0" width="47" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="DGe-HF-ukY"/>
+                            <constraint firstAttribute="width" constant="47" id="Pj7-UZ-lwC"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xjv-sD-OPQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2PP-NN-p7c"/>
+                    <constraint firstAttribute="trailing" secondItem="AIr-ZW-wI9" secondAttribute="trailing" constant="15" id="2nx-9m-F4M"/>
+                    <constraint firstItem="1jh-W2-RLJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3fg-Cb-13o"/>
+                    <constraint firstItem="ThN-21-Psb" firstAttribute="top" secondItem="1jh-W2-RLJ" secondAttribute="bottom" constant="15" id="4Gh-RF-3fU"/>
+                    <constraint firstItem="1jh-W2-RLJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Aka-LM-nx2"/>
+                    <constraint firstAttribute="bottom" secondItem="ThN-21-Psb" secondAttribute="bottom" constant="10" id="EHk-A3-LpR"/>
+                    <constraint firstAttribute="trailing" secondItem="xjv-sD-OPQ" secondAttribute="trailing" constant="15" id="LlP-YA-lIL"/>
+                    <constraint firstItem="AIr-ZW-wI9" firstAttribute="height" secondItem="ThN-21-Psb" secondAttribute="height" id="SkT-zW-G1R"/>
+                    <constraint firstAttribute="trailing" secondItem="1jh-W2-RLJ" secondAttribute="trailing" constant="15" id="UGA-BI-lkf"/>
+                    <constraint firstItem="ThN-21-Psb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="aUQ-Bm-bNL"/>
+                    <constraint firstItem="AIr-ZW-wI9" firstAttribute="centerY" secondItem="ThN-21-Psb" secondAttribute="centerY" id="wDX-fq-hve"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="activityImage" destination="1jh-W2-RLJ" id="9bd-SZ-y0q"/>
+                <outlet property="activityState" destination="xjv-sD-OPQ" id="pbD-h6-MFy"/>
+                <outlet property="timeLabel" destination="ThN-21-Psb" id="rOK-mP-fK5"/>
+                <outlet property="timeView" destination="AIr-ZW-wI9" id="F68-Xu-EB6"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="182.15892053973016"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="new" width="47" height="22.5"/>
+        <image name="product_piaoju" width="330" height="220"/>
+    </resources>
+</document>

@@ -8,19 +8,19 @@
 
 #import "ZHTabBarViewController.h"
 #import "HomeViewController.h"
-#import "FindViewController.h"
-#import "ActivityViewController.h"
+#import "FindHomeVC.h"
 #import "MyViewController.h"
 #import "ZHNavigationViewController.h"
 #import "MyBusinessViewController.h"
 #import "AppUserProfile.h"
+#import "ProductHomeVC.h"
 @interface ZHTabBarViewController ()<UITabBarControllerDelegate>
 {
     
 }
 @property (strong, nonatomic) HomeViewController *HomeTabVc;
-@property (strong, nonatomic) FindViewController *FindTabVc;
-@property (strong, nonatomic) ActivityViewController *ActivityTabVc;
+@property (strong, nonatomic) ProductHomeVC *ProductTabVC;
+@property (strong, nonatomic) FindHomeVC *FindTabVc;
 @property (strong, nonatomic) MyViewController *MyTabVc;
 @property (strong, nonatomic) MyBusinessViewController *MyBusinessTabVc;
 
@@ -44,18 +44,18 @@
                                                  name:goToLoginState
                                                object:nil];
     [self setChildVC:self.HomeTabVc title:@"首页" image:@"home_b" selectedImage:@"home_a"];
-    [self setChildVC:self.FindTabVc title:@"发现" image:@"Find_b" selectedImage:@"Find_a"];
-    [self setChildVC:self.ActivityTabVc title:@"活动" image:@"Activity_b" selectedImage:@"Activity_a"];
+    [self setChildVC:self.ProductTabVC title:@"产品" image:@"Activity_b" selectedImage:@"Activity_a"];
+    [self setChildVC:self.FindTabVc title:@"活动" image:@"find_b" selectedImage:@"find_a"];
     
 #if BusinessTag
     [self setChildVC:self.MyBusinessTabVc title:@"我的" image:@"my_b" selectedImage:@"my_a"];
-
+    
 #else
     [self setChildVC:self.MyTabVc title:@"我的" image:@"my_b" selectedImage:@"my_a"];
-
+    
 #endif
     
-
+    
 }
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
 {
@@ -78,7 +78,7 @@
     [childVC.tabBarItem setTitleTextAttributes:dict forState:UIControlStateNormal];
     
     NSMutableDictionary *selectdict = [NSMutableDictionary dictionary];
-    selectdict[NSForegroundColorAttributeName] = kMainColor;
+    selectdict[NSForegroundColorAttributeName] = [UIColor m_red];
     selectdict[NSFontAttributeName] = [UIFont systemFontOfSize:10];
     [childVC.tabBarItem setTitleTextAttributes:selectdict forState:UIControlStateSelected];
     
@@ -110,13 +110,13 @@
     _HomeTabVc = [[HomeViewController alloc] init];
     return _HomeTabVc;
 }
--(FindViewController*)FindTabVc{
-    _FindTabVc = [[FindViewController alloc] init];
+-(FindHomeVC*)FindTabVc{
+    _FindTabVc = [[FindHomeVC alloc] init];
     return _FindTabVc;
 }
--(ActivityViewController*)ActivityTabVc{
-    _ActivityTabVc = [[ActivityViewController alloc] init];
-    return _ActivityTabVc;
+-(ProductHomeVC*)ProductTabVC{
+    _ProductTabVC = [[ProductHomeVC alloc] init];
+    return _ProductTabVC;
 }
 -(MyViewController*)MyTabVc{
     _MyTabVc = [[MyViewController alloc] init];
@@ -137,13 +137,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
+

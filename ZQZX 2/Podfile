@@ -13,12 +13,11 @@ targetsArray.each do |t|
             pod 'MJExtension'
             pod 'IQKeyboardManager', '~> 6.2.0'
             pod 'MJRefresh'
-            pod ‘SDCycleScrollView'
             pod 'PPNumberButton'
+            pod 'SDWebImage'
             pod 'WMPageController'
             pod 'MBProgressHUD+JDragon'
             pod 'LLImagePickerView'
-            pod 'TZImagePickerController'
             pod 'MWPhotoBrowser'
             pod 'Qiniu', "~> 7.1"
             pod 'ActionSheetPicker-3.0', '~> 2.3.0'

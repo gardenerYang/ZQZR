@@ -20,8 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param success success description
  @param failure failure description
+ //首页不传 发现页传2
  */
-+(void)achieveImgRequestsuccess:(void (^)(NSArray *imgArr))success  failure:(void (^)(NSError *error))failure;
++(void)achieveImgWithState:(NSString*)state Requestsuccess:(void (^)(NSArray *imgArr))success  failure:(void (^)(NSError *error))failure;
 
 /**
  获取首页数据

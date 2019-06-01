@@ -33,7 +33,7 @@
 -(void)setBtnTitle:(NSArray *)title selectImgArr:(NSArray *)selectArr imgArr:(NSArray *)imgArr color:(UIColor *)color
 {
     __weak typeof(self) wf = self;
-    for (int i = 0; i<4 ;i++) {
+    for (int i = 0; i<selectArr.count ;i++) {
         _btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_btn setTitle:title[i] forState:UIControlStateNormal];
         [_btn setImage:[UIImage imageNamed:imgArr[i]] forState:UIControlStateNormal];
@@ -52,8 +52,8 @@
         
         [_btn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(0);
-            make.left.mas_equalTo(i*(Iphonewidth/4));
-            make.size.mas_equalTo(CGSizeMake(Iphonewidth/4, Iphonewidth/4));
+            make.left.mas_equalTo(i*(Iphonewidth/selectArr.count ));
+            make.size.mas_equalTo(CGSizeMake(Iphonewidth/selectArr.count , Iphonewidth/4));
             make.bottom.mas_equalTo(0);
         }];
     }
