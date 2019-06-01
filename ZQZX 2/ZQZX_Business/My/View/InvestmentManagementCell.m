@@ -56,7 +56,7 @@
     
     _money3Lb=[[UILabel alloc]init];
     _money3Lb.font = [UIFont s14];
-    _money3Lb.textColor=[UIColor m_red];
+    _money3Lb.textColor=kMainColor;
     _money3Lb.textAlignment=NSTextAlignmentRight;
     [_BKView addSubview:_money3Lb];
     

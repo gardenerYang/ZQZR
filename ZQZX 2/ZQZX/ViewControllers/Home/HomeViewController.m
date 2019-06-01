@@ -31,14 +31,19 @@
 #import "HomeCorporateNewsCell.h"
 #import "HomeIndustryNewsItemCell.h"
 #import "HomeVersionCell.h"
+#import "HttpRequest+Find.h"
 @interface HomeViewController ()<SDCycleScrollViewDelegate,ZJJTimeCountDownDelegate>
 @property (nonatomic, strong) SDCycleScrollView          *carouselView;
 @property (nonatomic, strong) HomeModel          *homeModel;
 @property (nonatomic, strong) NSArray          *imgArr;
-@property(nonatomic,strong) ZJJTimeCountDown * countDown;
-@property(nonatomic,strong)NSMutableArray *timeListArr;
+@property (nonatomic,strong) ZJJTimeCountDown * countDown;
+@property (nonatomic,strong)NSMutableArray *timeListArr;
 @property (nonatomic,strong)HomeNotificationView * remindView;
-@property(nonatomic,strong)NSMutableArray *remindtArr;
+@property (nonatomic,strong)NSMutableArray *remindtArr;
+@property (nonatomic,strong)NSMutableArray *corporateNewsArr;//企业新闻
+@property (nonatomic,strong)NSMutableArray *industryNewsArr;//行业新闻
+@property (nonatomic,strong)FindModel * model;
+
 
 @end
 
@@ -74,6 +79,27 @@
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(loginDidSuccess) name:@"loginDidSuccess" object:nil];
     [self getHomeRemindUserOrFinancialPlannersuccess];
 }
+//获取企业新闻
+- (void)getCorporateNews{
+    [HttpRequest getFindDataPageNum:1 type:@"2" home:@"1" Requestsuccess:^(FindModel * _Nonnull findMode, NSString * _Nonnull message) {
+        self.corporateNewsArr = [NSMutableArray array];
+        [self.corporateNewsArr addObjectsFromArray:findMode.cList];
+        [self.tableView reloadData];
+    } failure:^(NSError * _Nonnull error) {
+        [MBProgressHUD showErrorMessage:error.localizedDescription];
+    }];
+}
+//获取行业新闻
+- (void)getIndustryNews{
+    [HttpRequest getFindDataPageNum:1 type:@"1" home:@"1" Requestsuccess:^(FindModel * _Nonnull findMode, NSString * _Nonnull message) {
+        self.industryNewsArr = [NSMutableArray array];
+        [self.industryNewsArr addObjectsFromArray:findMode.cList];
+        self.model = findMode;
+        [self.tableView reloadData];
+    } failure:^(NSError * _Nonnull error) {
+        [MBProgressHUD showErrorMessage:error.localizedDescription];
+    }];
+}
 - (void)getUpdateVersion{
     [HttpRequest getUpdateRequestsuccess:^(HttpResponse * _Nonnull data, NSString * _Nonnull message) {
         NSLog(@"%@",data.data);
@@ -97,7 +123,6 @@
 }
 -(void)getHomeData{
     __weak typeof(self) wf = self;
-
     [HttpRequest getTopOrSuggInvestionsRequestsuccess:^(HomeModel * _Nonnull homeModel, NSString * _Nonnull message) {
         [wf.tableView stopReload];
         self.homeModel = homeModel;
@@ -168,7 +193,8 @@
     [self.tableView addMJ_Header:^{
         [wf getImgData];//获取图片数据
         [wf getHomeData];//获取首页数据
-        
+        [wf getIndustryNews];
+        [wf getCorporateNews];
     }];
     [self.tableView refresh];
     
@@ -208,17 +234,15 @@
             }
             NSString *title;
             if (selectClick == 0) {
-                title = @"票据";
+                title = @"票据产品";
             }else if (selectClick == 1){
                 title = @"保理";
-                
             }else if (selectClick == 2){
                 title = @"房产";
             }else{
                 title = @"股权";
             }
-            if (selectClick == 2) {
-         
+            if (selectClick == 1 || selectClick ==3) {
                 TipsViewController *TipsVC=[[TipsViewController alloc]init];
                 TipsVC.titleLbText = @"温馨提示";
                 TipsVC.srcLbText = @"此功能暂未开放,敬请期待";
@@ -230,7 +254,7 @@
                 }];
                 [TipsVC showInVC: wf ];
                 return ;
-            }else if (selectClick == 3){
+            }else if (selectClick == 2){
                 WebviewViewController * vc = [[WebviewViewController alloc]init];
                 vc.url = @"https://rich.qyrich.com/index?channelNo=zqzr&organ=02200001";
                 [self.navigationController pushViewController:vc animated:YES];
@@ -240,26 +264,35 @@
                 homeListVC.type1 = @"0";
                 homeListVC.type2 = @"4";
                 [wf.navigationController pushViewController:homeListVC animated:YES];
-            }else{
-                InvestmentViewController *investmentVC =[[InvestmentViewController alloc]initType:@"1"];
-                investmentVC.type = 1;
-                [investmentVC setCustomerTitle:title];
-                [self.navigationController pushViewController:investmentVC animated:YES];
             }
            
         }];
         return cell;
     }else if (indexPath.row == 1) {
         HomeCorporateNewsCell * cell = [tableView dequeueReusableCellWithIdentifier:@"HomeCorporateNewsCell"];
+        if (self.corporateNewsArr.count > 0) {
+            ListItem * model = self.corporateNewsArr[0];
+            cell.model = model;
+            [cell addTapGestureBlock:^(UIView *view) {
+                [self gotoWebURL:model.urlHref title:@"企业新闻"];
+            }];
+        }
         return cell;
     }else if (indexPath.row ==2){
         HomeIndustryNewsItemCell * cell = [tableView dequeueReusableCellWithIdentifier:@"HomeIndustryNewsItemCell"];
-        if (cell ==nil) {
-            cell = [[HomeIndustryNewsItemCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"HomeIndustryNewsItemCell"];
-        }
+        cell = [[HomeIndustryNewsItemCell alloc]initWithIndustryArray:self.industryNewsArr clickItem:^(NSInteger tag) {
+            ListItem * model = self.industryNewsArr[tag];
+            [self gotoWebURL:model.urlHref title:@"行业新闻"];            
+        }];
         return cell;
     }else{
         HomeVersionCell * cell = [tableView dequeueReusableCellWithIdentifier:@"HomeVersionCell"];
+        [cell addTapGestureBlock:^(UIView *view) {
+            [self gotoWebURL:self.model.url title:self.model.title];
+        }];
+        if (self.model !=nil) {
+            [cell.imageV sd_setImageWithURL:kURL(self.model.bannerUrl) placeholderImage:kBannerPlaceholderImage];
+        }
         return cell;
     }
     

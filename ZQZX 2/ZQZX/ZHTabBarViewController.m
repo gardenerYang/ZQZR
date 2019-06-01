@@ -78,7 +78,7 @@
     [childVC.tabBarItem setTitleTextAttributes:dict forState:UIControlStateNormal];
     
     NSMutableDictionary *selectdict = [NSMutableDictionary dictionary];
-    selectdict[NSForegroundColorAttributeName] = [UIColor m_red];
+    selectdict[NSForegroundColorAttributeName] = kMainColor;
     selectdict[NSFontAttributeName] = [UIFont systemFontOfSize:10];
     [childVC.tabBarItem setTitleTextAttributes:selectdict forState:UIControlStateSelected];
     

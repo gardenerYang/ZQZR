@@ -36,7 +36,7 @@
     
     _srcLabel=[[UILabel alloc]init];
     _srcLabel.font = [UIFont s14];
-    _srcLabel.textColor=[UIColor m_textGrayColor];
+    _srcLabel.textColor=kLightGray;
     _srcLabel.textAlignment=NSTextAlignmentCenter;
     [self addSubview:_srcLabel];
     

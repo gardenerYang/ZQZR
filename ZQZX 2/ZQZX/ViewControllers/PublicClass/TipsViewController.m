@@ -61,7 +61,7 @@
     _srcLb = [[UILabel alloc]init];
     _srcLb.text = _srcLbText;
     _srcLb.textAlignment = NSTextAlignmentCenter;
-    _srcLb.textColor = [UIColor m_textGrayColor];
+    _srcLb.textColor = kLightGray;
     _srcLb.font = [UIFont s14];
     [self.bgView addSubview:_srcLb];
     
@@ -76,7 +76,7 @@
     
     _cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_cancelBtn setTitle: @"取消" forState:UIControlStateNormal];
-    [_cancelBtn setTitleColor:[UIColor m_blue] forState:UIControlStateNormal];
+    [_cancelBtn setTitleColor:kMainColor forState:UIControlStateNormal];
     _cancelBtn.titleLabel.font = [UIFont s16];
     _cancelBtn.backgroundColor = [UIColor whiteColor];
     __weak typeof(self) wf = self;
@@ -92,7 +92,7 @@
     
     _confirmBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_confirmBtn setTitle: @"确定" forState:UIControlStateNormal];
-    [_confirmBtn setTitleColor:[UIColor m_blue] forState:UIControlStateNormal];
+    [_confirmBtn setTitleColor:kMainColor forState:UIControlStateNormal];
     _confirmBtn.titleLabel.font = [UIFont s16];
     _confirmBtn.backgroundColor = [UIColor whiteColor];
     

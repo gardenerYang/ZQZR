@@ -83,7 +83,7 @@
         _TextField.contentVerticalAlignment=UIControlContentVerticalAlignmentCenter;
         _TextField.font=[UIFont s16];
         [_TextField setValue:[UIColor m_textLighGrayColor] forKeyPath:@"_placeholderLabel.textColor"];
-        _TextField.tintColor = [UIColor m_red];
+        _TextField.tintColor = kMainColor;
 
     }
     return _TextField;

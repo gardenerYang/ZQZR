@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor withHexStr:@"feffff"];
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:22],NSForegroundColorAttributeName:kTitleColor}];
 
 }
 -(void)ZHNavigationBarHidden:(BOOL)IsHidden

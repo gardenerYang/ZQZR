@@ -42,7 +42,7 @@
     UIView *footview=[[UIView alloc]initWithFrame:CGRectMake(0, 0, Iphonewidth, 200)];
     footview.userInteractionEnabled = YES;
     UIButton *quitBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [quitBtn setBackgroundColor:[UIColor m_red]];
+    [quitBtn setBackgroundColor:kMainColor];
     [quitBtn setTitle:@"退出登录" forState:UIControlStateNormal];
     quitBtn.layer.masksToBounds = YES;
     quitBtn.layer.cornerRadius = 30;
@@ -56,13 +56,11 @@
             
         }];
         [TipsVC setTapConfirmBtnblock:^{
-            [MBProgressHUD showActivityMessageInView:@"退出登录中..."];
-            
+            [[AppUserProfile sharedInstance]cleanUp];
+            [MBProgressHUD showSuccessMessage:@"退出登录成功"];
+            [[NSNotificationCenter defaultCenter] postNotificationName:ZHMainType object:nil];
             [HttpRequest exitLogonRequestsuccess:^(HttpResponse * _Nonnull data, NSString * _Nonnull message) {
                 [MBProgressHUD hideHUD];
-                [[AppUserProfile sharedInstance]cleanUp];
-                [MBProgressHUD showSuccessMessage:@"退出登录成功"];
-                [[NSNotificationCenter defaultCenter] postNotificationName:ZHMainType object:nil];
                 
             } failure:^(NSError * _Nonnull error) {
                 [MBProgressHUD showErrorMessage:error.localizedDescription];

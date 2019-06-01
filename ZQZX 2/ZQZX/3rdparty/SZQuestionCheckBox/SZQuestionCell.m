@@ -76,7 +76,7 @@
         make.size.mas_equalTo(CGSizeMake(35, 15));
     }];
     self.titleLab.textAlignment = NSTextAlignmentCenter;
-    self.titleLab.backgroundColor = [UIColor m_red];
+    self.titleLab.backgroundColor = kMainColor;
     self.titleLab.text = @"12/12";
     self.titleLab.textColor = [UIColor whiteColor];
     self.titleLab.font = kFont(10);

@@ -17,7 +17,7 @@
         [self.contentView addSubview:self.BKView];
         
         _imgView = [[UIImageView alloc]init];
-        _imgView.backgroundColor = [UIColor m_red];
+        _imgView.backgroundColor = kMainColor;
         [_BKView addSubview:_imgView];
         
         _titleLabel=[[UILabel alloc]init];

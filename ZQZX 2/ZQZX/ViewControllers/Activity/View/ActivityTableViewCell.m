@@ -29,7 +29,7 @@
     [self addSubview:self.BKView];
     
     _bgimgView = [[UIImageView alloc]init];
-    _bgimgView.backgroundColor = [UIColor m_red];
+    _bgimgView.backgroundColor = kMainColor;
     [_BKView addSubview:_bgimgView];
     
     _titleLb=[[UILabel alloc]init];

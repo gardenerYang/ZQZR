@@ -30,7 +30,7 @@
     rightBtn.titleLabel.font = kFont(14);
     rightBtn.backgroundColor = [UIColor whiteColor];
     [rightBtn setTitle:@"立即参加" forState:(UIControlStateNormal)];
-    [rightBtn setTitleColor:kOrangeColor forState:(UIControlStateNormal)];
+    [rightBtn setTitleColor:kMainColor forState:(UIControlStateNormal)];
 
     [rightBtn setFrame:CGRectMake(0, self.webView.bottom, kWidth/2, 50)];
     [leftBtn setFrame:CGRectMake(kWidth/2, self.webView.bottom, kWidth/2, 50)];

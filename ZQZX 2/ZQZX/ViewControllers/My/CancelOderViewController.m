@@ -29,7 +29,7 @@
     [self.view addSubview:self.textView];
     
     UIButton *cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [cancelBtn setBackgroundColor:[UIColor m_red]];
+    [cancelBtn setBackgroundColor:kMainColor];
     [cancelBtn setTitle:@"提交" forState:UIControlStateNormal];
     cancelBtn.layer.masksToBounds = YES;
     cancelBtn.layer.cornerRadius = 30;

@@ -22,7 +22,7 @@
     
     _titleLabel=[[UILabel alloc]init];
     _titleLabel.font = [UIFont s12];
-    _titleLabel.textColor=[UIColor m_textGrayColor];
+    _titleLabel.textColor=kLightGray;
     _titleLabel.textAlignment=NSTextAlignmentLeft;
     [self addSubview:_titleLabel];
     

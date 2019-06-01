@@ -44,7 +44,7 @@
     UIView *footview=[[UIView alloc]initWithFrame:CGRectMake(0, 0, Iphonewidth, 200)];
     footview.userInteractionEnabled = YES;
     UIButton *quitBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [quitBtn setBackgroundColor:[UIColor m_red]];
+    [quitBtn setBackgroundColor:kMainColor];
     [quitBtn setTitle:@"退出登录" forState:UIControlStateNormal];
     quitBtn.layer.masksToBounds = YES;
     quitBtn.layer.cornerRadius = 30;

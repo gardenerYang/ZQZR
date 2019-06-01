@@ -651,7 +651,7 @@
     successVC.titleLbText = @"预约失败";
     successVC.srcLbText = @"未进行实名认证";
     successVC.btnTitle = @"实名认证";
-    successVC.btnBgColor = [UIColor m_blue];
+    successVC.btnBgColor = kMainColor;
     successVC.imgName = @"err";
     [successVC setTapBtnblock:^{
         [successVC dismiss];
@@ -670,7 +670,7 @@
     successVC.titleLbText = @"预约失败";
     successVC.srcLbText = @"未绑定银行卡";
     successVC.btnTitle = @"去绑卡";
-    successVC.btnBgColor = [UIColor m_blue];
+    successVC.btnBgColor = kMainColor;
     successVC.imgName = @"err";
     [successVC setTapBtnblock:^{
         [successVC dismiss];

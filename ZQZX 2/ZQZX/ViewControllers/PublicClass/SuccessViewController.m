@@ -56,7 +56,7 @@
     _srcLb = [[UILabel alloc]init];
     _srcLb.text = _srcLbText;
     _srcLb.textAlignment = NSTextAlignmentCenter;
-    _srcLb.textColor = [UIColor m_textGrayColor];
+    _srcLb.textColor = kLightGray;
     _srcLb.font = [UIFont s14];
     [self.bgView addSubview:_srcLb];
   

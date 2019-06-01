@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic , assign) NSInteger              pageNum;
 @property (nonatomic , strong) NSString              * content;
 @property (nonatomic , strong) NSString              * url;
-
+@property (nonatomic , copy) NSString              * title;
 @end
 
 @interface ListItem :BaseClass
@@ -36,5 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic , assign) NSInteger              updateTime;
 @property (nonatomic , copy) NSString              * content;
 @property (nonatomic , copy) NSString              * urlHref;
+@property (nonatomic , copy) NSString              * coverImageUrl;
+
+
 @end
 NS_ASSUME_NONNULL_END

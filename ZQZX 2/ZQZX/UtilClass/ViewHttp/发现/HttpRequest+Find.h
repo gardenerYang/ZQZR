@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param success success description
  @param failure failure description
  */
-+(void)getFindDataPageNum:(NSInteger )pageNum type:(NSString *)type Requestsuccess:(void (^)(FindModel *findMode ,NSString *message ))success  failure:(void (^)(NSError *error))failure;
++(void)getFindDataPageNum:(NSInteger )pageNum type:(NSString *)type home:(NSString*)home Requestsuccess:(void (^)(FindModel *findMode ,NSString *message ))success  failure:(void (^)(NSError *error))failure;
 
 @end
 

@@ -61,7 +61,7 @@ UICollectionViewDelegateFlowLayout>
     self.pageControl.userInteractionEnabled = NO;
     self.pageControl.hidesForSinglePage = YES;
     self.pageControl.numberOfPages = self.imageNames.count;
-    self.pageControl.currentPageIndicatorTintColor=[UIColor m_red];
+    self.pageControl.currentPageIndicatorTintColor=kMainColor;
 //    [self.view addSubview:self.pageControl];//若图上不带点则添加
     
     self.hiddenBtn = [UIButton buttonWithType:UIButtonTypeCustom];

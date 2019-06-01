@@ -123,4 +123,5 @@ typedef NS_ENUM(NSInteger, ValidationType) {
 + (NSString *)replaceStringWithIDCardString:(NSString*)string;
 - (NSString *)toJSONString;
 + (NSInteger)compareVersion:(NSString *)v1 to:(NSString *)v2;
++ (NSString *)replaceStringWithString:(NSString*)string Asterisk:(NSInteger)startLocation length:(NSInteger)length;
 @end

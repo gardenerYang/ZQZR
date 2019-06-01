@@ -25,14 +25,14 @@
     
     _timeLb=[[UILabel alloc]init];
     _timeLb.font = [UIFont s14];
-    _timeLb.textColor=[UIColor m_textGrayColor];
+    _timeLb.textColor=kLightGray;
     _timeLb.textAlignment=NSTextAlignmentLeft;
     [self addSubview:_timeLb];
     
     
     _priceLb=[[UILabel alloc]init];
     _priceLb.font = [UIFont s14];
-    _priceLb.textColor=[UIColor m_red];
+    _priceLb.textColor=kMainColor;
     _priceLb.textAlignment=NSTextAlignmentRight;
     [self addSubview:_priceLb];
     

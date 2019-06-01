@@ -35,7 +35,7 @@
     _textField.contentVerticalAlignment=UIControlContentVerticalAlignmentCenter;
     _textField.font=[UIFont s16];
     [_textField setValue:[UIColor m_textLighGrayColor] forKeyPath:@"_placeholderLabel.textColor"];
-    _textField.tintColor = [UIColor m_red];
+    _textField.tintColor = kMainColor;
     [self addSubview:_textField];
 
     _jianImg = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"arrow"]];

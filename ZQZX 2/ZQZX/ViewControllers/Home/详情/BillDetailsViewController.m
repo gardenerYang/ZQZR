@@ -174,7 +174,7 @@ static CGFloat const kWMMenuViewHeight = 44.0;
     if (cell == nil) {
         cell= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
         cell.textLabel.text= [NSString stringWithFormat:@"测试数据————%ld", indexPath.row];
-        cell.textLabel.textColor= [UIColor m_red];
+        cell.textLabel.textColor= kMainColor;
         cell.selectionStyle= UITableViewCellSelectionStyleNone;
     }
     return cell;

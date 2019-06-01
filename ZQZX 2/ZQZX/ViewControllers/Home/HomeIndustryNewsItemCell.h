@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UIScrollView * scrollView;
 @property (nonatomic,strong) UILabel * titleLabel;
 @property (nonatomic,strong) UIButton * moreBtn;
+- (instancetype)initWithIndustryArray:(NSMutableArray*)array clickItem:(void (^)(NSInteger tag))clickItem;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -19,7 +19,7 @@
 }
 -(void)addUI{
     _bgImgView = [[UIImageView alloc]init];
-    _bgImgView.backgroundColor = [UIColor m_red];
+    _bgImgView.backgroundColor = kMainColor;
     [self addSubview:_bgImgView];
     [_bgImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(0);

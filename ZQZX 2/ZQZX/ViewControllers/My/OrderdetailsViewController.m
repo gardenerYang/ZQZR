@@ -198,8 +198,8 @@
             cell.tagLb.layer.borderColor = [UIColor withHexStr:@"FF4500"].CGColor;
             cell.tagLb.textColor = [UIColor withHexStr:@"FF4500"];
         }else{
-            cell.tagLb.layer.borderColor = [UIColor m_red].CGColor;
-            cell.tagLb.textColor = [UIColor m_red];
+            cell.tagLb.layer.borderColor = kMainColor.CGColor;
+            cell.tagLb.textColor = kMainColor;
         }
         cell.timeView.srcLabel.text = _model.addTime;
         cell.deadlineView.srcLabel.text = [NSString stringWithFormat:@"%@天",_model.projectDuration];

@@ -71,7 +71,7 @@ const void *leftKey = "leftSelector";
     UIButton *barBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 60)];
     [barBtn addTarget:self action:@selector(selectBarButtonItem:) forControlEvents:UIControlEventTouchUpInside];
     [barBtn setTitle:title forState:UIControlStateNormal];
-    [barBtn setTitleColor:[UIColor m_textGrayColor] forState:UIControlStateNormal];
+    [barBtn setTitleColor:kLightGray forState:UIControlStateNormal];
     barBtn.titleLabel.font=[UIFont systemFontOfSize:14];
     [barBtn setEdgeInsetsWithType:SSEdgeInsetsTypeImage marginType:SSMarginTypeRight margin:10];
     barBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;

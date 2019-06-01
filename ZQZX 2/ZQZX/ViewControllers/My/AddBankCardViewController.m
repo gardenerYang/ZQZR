@@ -69,9 +69,9 @@
     _confirmBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_confirmBtn setTitle:@"绑卡" forState:UIControlStateNormal];
     [_confirmBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    _confirmBtn.titleLabel.font = [UIFont s20];
-    _confirmBtn.layer.cornerRadius = 25.0;
-    _confirmBtn.backgroundColor = [UIColor m_red];
+    _confirmBtn.titleLabel.font = kF18;
+    _confirmBtn.layer.cornerRadius = 80/4;
+    _confirmBtn.backgroundColor = kMainColor;
     [_confirmBtn addAction:^(UIButton *sender) {
         [MBProgressHUD showActivityMessageInView:nil];
         [wf.nameTextField.TextField resignFirstResponder];
@@ -96,7 +96,7 @@
             successVC.titleLbText = @"温馨提示";
             successVC.srcLbText = @"恭喜您成功绑定银行卡";
             successVC.btnTitle = @"确定";
-            successVC.btnBgColor = [UIColor m_Lightred];
+            successVC.btnBgColor = kMainColor;
             [successVC setTapBtnblock:^{
                 [wf.navigationController popViewControllerAnimated:YES];
             }];
@@ -109,7 +109,7 @@
                     successVC.titleLbText = @"温馨提示";
                     successVC.srcLbText = error.localizedDescription;
                     successVC.btnTitle = @"确定";
-                    successVC.btnBgColor = [UIColor m_blue];
+                    successVC.btnBgColor = kMainColor;
                     successVC.imgName = @"err";
 
                     [successVC setTapBtnblock:^{
@@ -155,7 +155,7 @@
         make.top.mas_equalTo(self.bottomLine.mas_bottom).offset(20);
         make.left.mas_equalTo(self.cardTextField).offset(10);
         make.right.mas_equalTo(self.cardTextField);
-        make.height.mas_equalTo(50);
+        make.height.mas_equalTo(80/2);
     }];
 }
 

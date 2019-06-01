@@ -66,6 +66,7 @@
 {
     if (!_nameLb) {
         _nameLb=[[UILabel alloc]init];
+        _nameLb.textColor = kTitleColor;
         _nameLb.font = [UIFont s16];
     }
     return _nameLb;
@@ -84,7 +85,7 @@
         _TextField.contentVerticalAlignment=UIControlContentVerticalAlignmentCenter;
         _TextField.font=[UIFont s16];
         [_TextField setValue:[UIColor m_textLighGrayColor] forKeyPath:@"_placeholderLabel.textColor"];
-        _TextField.tintColor = [UIColor m_red];
+        _TextField.tintColor = kMainColor;
         
     }
     return _TextField;

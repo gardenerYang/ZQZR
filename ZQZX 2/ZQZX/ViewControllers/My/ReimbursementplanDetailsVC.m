@@ -175,7 +175,7 @@
         }
         else if (indexPath.row == 2){
             cell.srcLb.text = [self status: _model.status];
-            cell.srcLb.textColor = [UIColor m_Lightred];
+            cell.srcLb.textColor = kMainColor;
 
         }else if (indexPath.row == 3){
             cell.srcLb.text = [self annualRate:_model.rateYear];

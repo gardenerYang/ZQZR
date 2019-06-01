@@ -122,7 +122,7 @@
         }];
         
          }];
-    delete.backgroundColor = [UIColor m_red];
+    delete.backgroundColor = kMainColor;
         return @[delete];
     }
                             

@@ -67,13 +67,13 @@
     
     _nextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_nextBtn setTitle:@"注册" forState:UIControlStateNormal];
-    _nextBtn.backgroundColor = [UIColor m_Lightred];
-    _nextBtn.titleLabel.font = [UIFont s20];
-    _nextBtn.layer.cornerRadius = 25.0;
+    _nextBtn.backgroundColor = kMainColor;
+    _nextBtn.titleLabel.font = kF18;
+    _nextBtn.layer.cornerRadius = 80/4;
     [_nextBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     _nextBtn.layer.shadowOffset =  CGSizeMake(1,10);
     _nextBtn.layer.shadowOpacity = 0.6;
-    _nextBtn.layer.shadowColor =  [UIColor m_Lightred].CGColor;
+    _nextBtn.layer.shadowColor =  kMainColor.CGColor;
     [_nextBtn addAction:^(UIButton *sender) {
         [wf.pwdTextField.TextField resignFirstResponder];
         [wf.pwdTwoField.TextField resignFirstResponder];
@@ -149,7 +149,7 @@
     [self.nextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.bottomLine.mas_bottom).offset(20);
         make.right.mas_equalTo(self.topLine);
-        make.height.mas_equalTo(50);
+        make.height.mas_equalTo(80/2);
         make.left.mas_equalTo(self.topLine);
     }];
     [self addBottomIMG];

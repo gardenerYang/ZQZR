@@ -31,7 +31,7 @@
     [_headImgView addSubview:_photoImgView];
     
     _titleLabel=[[UILabel alloc]init];
-    _titleLabel.font = [UIFont s20];
+    _titleLabel.font = kF18;
     _titleLabel.textColor=[UIColor whiteColor];
     _titleLabel.textAlignment=NSTextAlignmentCenter;
     [_headImgView addSubview:_titleLabel];

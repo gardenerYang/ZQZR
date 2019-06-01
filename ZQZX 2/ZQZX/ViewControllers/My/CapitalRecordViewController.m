@@ -105,7 +105,7 @@
         cell.DescriptionLabel.text = [NSString stringWithFormat:@"\n备注:已还款金额%.2f元。其中本金%.2f元，利息%.2f元。\n",model.actualAmount,model.capital,model.interest];
 
     }else{
-        cell.moneyLab.textColor = [UIColor m_red];
+        cell.moneyLab.textColor = kMainColor;
         cell.moneyLab.text = [NSString stringWithFormat:@"-%@",@(model.actualAmount).stringValue];
         cell.DescriptionLabel.text = [NSString stringWithFormat:@"\n备注:赎回通过,已返还金额%.2f元。其中本金%.2f元，利息%.2f元。\n",model.actualAmount,model.capital,model.interest];
 

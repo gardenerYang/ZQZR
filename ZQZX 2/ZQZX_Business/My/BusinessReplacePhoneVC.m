@@ -53,7 +53,7 @@
     
     _getCodeButton = [RDCountDownButton buttonWithType:UIButtonTypeCustom];
     [_getCodeButton setTitle:@"获取验证码" forState:UIControlStateNormal];
-    [_getCodeButton setTitleColor:[UIColor m_textGrayColor] forState:UIControlStateNormal];
+    [_getCodeButton setTitleColor:kLightGray forState:UIControlStateNormal];
     _getCodeButton.titleLabel.font = [UIFont s14];
     _getCodeButton.layer.cornerRadius = 15.0;
     _getCodeButton.layer.borderColor = [UIColor m_textLighGrayColor].CGColor;
@@ -78,9 +78,9 @@
     _nextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_nextBtn setTitle:@"下一步" forState:UIControlStateNormal];
     [_nextBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    _nextBtn.titleLabel.font = [UIFont s20];
-    _nextBtn.layer.cornerRadius = 25.0;
-    _nextBtn.backgroundColor = [UIColor m_red];
+    _nextBtn.titleLabel.font = kF18;
+    _nextBtn.layer.cornerRadius = 80/4;
+    _nextBtn.backgroundColor = kMainColor;
     if (_type == BusinessReplacePhoneType_Code) {//如果是仅仅验证码时走
         [_nextBtn addAction:^(UIButton *sender) {
             if (wf.verificationField.TextField.text.length <= 0 ){
@@ -191,7 +191,7 @@
         make.top.mas_equalTo(self.stateLb.mas_bottom).offset(20);
         make.left.mas_equalTo(self.verificationField).offset(10);
         make.right.mas_equalTo(self.verificationField);
-        make.height.mas_equalTo(50);
+        make.height.mas_equalTo(80/2);
     }];
     
 }
@@ -233,8 +233,8 @@
 {
     self.getCodeButton.enabled = NO;
     [self.getCodeButton startCountDownWithSecond:60];
-    [_getCodeButton setTitleColor:[UIColor m_red] forState:UIControlStateNormal];
-    _getCodeButton.layer.borderColor = [UIColor m_Lightred].CGColor;
+    [_getCodeButton setTitleColor:kMainColor forState:UIControlStateNormal];
+    _getCodeButton.layer.borderColor = kMainColor.CGColor;
     
     [self.getCodeButton countDownChanging:^NSString *(RDCountDownButton *countDownButton,NSUInteger second) {
         NSString *title = [NSString stringWithFormat:@"剩余%zd秒",second];

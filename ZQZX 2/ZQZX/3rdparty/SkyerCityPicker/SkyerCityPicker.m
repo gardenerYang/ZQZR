@@ -54,7 +54,7 @@
     [self addSubview:_cityPicker];
     //一个工具栏
     UIView *viewTool=[[UIView alloc] initWithFrame:CGRectMake(0, KScreenHeight-216-44, KScreenWidth, 44)];
-    UIColor *color=[UIColor m_Lightred];
+    UIColor *color=kMainColor;
     viewTool.backgroundColor=color;
     [self addSubview:viewTool];
     //一个取消按钮

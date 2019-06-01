@@ -147,7 +147,7 @@
     [footView addSubview:pickerV1];
     
     _submissionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_submissionBtn setBackgroundColor:[UIColor m_red]];
+    [_submissionBtn setBackgroundColor:kMainColor];
     [_submissionBtn setTitle:@"提交" forState:UIControlStateNormal];
     _submissionBtn.layer.masksToBounds = YES;
     _submissionBtn.layer.cornerRadius = 25;
@@ -281,7 +281,7 @@
         cell.textField.placeholder = @"";
        
         cell.textField.text = [self appointmentMoneyStr:_model.subscribeAmount] ;
-        cell.textField.textColor = [UIColor m_Lightred];
+        cell.textField.textColor = kMainColor;
         cell.textField.userInteractionEnabled = NO;
 
         return cell;

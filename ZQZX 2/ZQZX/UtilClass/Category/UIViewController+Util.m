@@ -47,6 +47,15 @@ static const void *noViewKey = &noViewKey;
         make.bottom.mas_equalTo(self.view);
         make.height.mas_equalTo(bottomImg.mas_width).multipliedBy(0.25);
     }];
+    UILabel * bottomTitle = [[UILabel alloc]init];
+    [bottomImg addSubview:bottomTitle];
+    [bottomTitle setText:@"仅限永业通会员使用"];
+    bottomTitle.font = kF10;
+    bottomTitle.textColor = kMainColor;
+    [bottomTitle mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(bottomImg);
+        make.bottom.equalTo(bottomImg).offset(-15);
+    }];
 }
 
 //获取当前屏幕显示的viewcontroller

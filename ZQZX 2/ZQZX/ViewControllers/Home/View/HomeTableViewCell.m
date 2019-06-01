@@ -27,7 +27,7 @@
         
         _moreBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_moreBtn setTitle:@"更多>>" forState:UIControlStateNormal];
-        [_moreBtn setTitleColor:[UIColor m_textGrayColor] forState:UIControlStateNormal];
+        [_moreBtn setTitleColor:kLightGray forState:UIControlStateNormal];
         _moreBtn.titleLabel.font = [UIFont s14];
         __weak typeof(self) wf = self;
         [_moreBtn addAction:^(UIButton *sender) {
@@ -49,7 +49,7 @@
         
         _srcTitleLb=[[UILabel alloc]init];
         _srcTitleLb.font = [UIFont s12];
-        _srcTitleLb.textColor=[UIColor m_textGrayColor];
+        _srcTitleLb.textColor=kLightGray;
         _srcTitleLb.textAlignment=NSTextAlignmentCenter;
         [_BKView addSubview:_srcTitleLb];
         
@@ -63,7 +63,7 @@
         _stateLb.font = [UIFont s12];
         _stateLb.textColor=[UIColor whiteColor];
         _stateLb.textAlignment=NSTextAlignmentCenter;
-        _stateLb.backgroundColor = [UIColor m_Lightred];
+        _stateLb.backgroundColor = kMainColor;
         _stateLb.layer.cornerRadius = 2;
         _stateLb.layer.masksToBounds = YES;
         [_BKView addSubview:_stateLb];

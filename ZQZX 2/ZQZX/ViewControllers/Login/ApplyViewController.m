@@ -17,12 +17,10 @@
 @property(nonatomic,strong)ZHLoginTextFieldTwoView *nameField;
 @property(nonatomic,strong)ZHLoginTextFieldTwoView *phoneField;
 @property(nonatomic,strong)ZHLoginTextFieldTwoView *cityField;
-@property(nonatomic,strong)ZHLoginTextFieldTwoView *addressField;
 
 @property(nonatomic,strong)UIView *topLine;
 @property(nonatomic,strong)UIView *middleLine;
 @property(nonatomic,strong)UIView *bottomLine;
-@property(nonatomic,strong)UIView *bottomLine1;
 
 
 @property(nonatomic,strong)UIButton *applyBtn;
@@ -95,29 +93,16 @@
     _bottomLine = [[UIView alloc]init];
     _bottomLine.backgroundColor = [UIColor m_lineColor];
     [self.view addSubview:_bottomLine];
-    
-    
-    
-    
-    _addressField=[[ZHLoginTextFieldTwoView alloc]init];
-    _addressField.TextField.placeholder= @"请输入通讯地址";
-    _addressField.nameLb.text = @"通讯地址";
-    _addressField.TextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-    [self.view addSubview:_addressField];
-    
-    _bottomLine1 = [[UIView alloc]init];
-    _bottomLine1.backgroundColor = [UIColor m_lineColor];
-    [self.view addSubview:_bottomLine1];
-    
+
     
     
     
     _applyBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_applyBtn setTitle:@"申请" forState:UIControlStateNormal];
     [_applyBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    _applyBtn.titleLabel.font = [UIFont s20];
-    _applyBtn.layer.cornerRadius = 25.0;
-    _applyBtn.backgroundColor = [UIColor m_red];
+    _applyBtn.titleLabel.font = kF18;
+    _applyBtn.layer.cornerRadius = 80/4;
+    _applyBtn.backgroundColor = kMainColor;
     [_applyBtn addAction:^(UIButton *sender) {
         if (wf.nameField.TextField.text.length <= 0 ) {
             [MBProgressHUD showErrorMessage:@"请输入姓名"];
@@ -128,12 +113,9 @@
         }else if (wf.provinceStr.length <= 0 ){
             [MBProgressHUD showErrorMessage:@"请选择城市"];
             return;
-        } else if (wf.addressField.TextField.text.length <= 0 ){
-            [MBProgressHUD showErrorMessage:@"请输入通讯地址"];
-            return;
         }else{
         [MBProgressHUD showActivityMessageInView:nil];
-        [HttpRequest ApplyFinancialManager:wf.nameField.TextField.text phone:wf.phoneField.TextField.text province:wf.provinceStr city:wf.cityStr address:wf.addressField.TextField.text Requestsuccess:^(HttpResponse * _Nonnull data, NSString * _Nonnull message) {
+        [HttpRequest ApplyFinancialManager:wf.nameField.TextField.text phone:wf.phoneField.TextField.text province:wf.provinceStr city:wf.cityStr address:@"" Requestsuccess:^(HttpResponse * _Nonnull data, NSString * _Nonnull message) {
             [MBProgressHUD hideHUD];
             
             SuccessViewController *successVC=[[SuccessViewController alloc]init];
@@ -199,25 +181,11 @@
         make.right.mas_equalTo(self.cityField);
         make.height.mas_equalTo(1);
     }];
-    [self.addressField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.bottomLine.mas_bottom).offset(10);
+    [self.applyBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.bottomLine.mas_bottom).offset(30);
         make.left.mas_equalTo(self.bottomLine);
         make.right.mas_equalTo(self.bottomLine);
-        make.height.mas_equalTo(60);
-    }];
-    [self.bottomLine1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.addressField.mas_bottom).offset(1);
-        make.left.mas_equalTo(self.addressField);
-        make.right.mas_equalTo(self.addressField);
-        make.height.mas_equalTo(1);
-    }];
-    
-    
-    [self.applyBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.bottomLine1.mas_bottom).offset(30);
-        make.left.mas_equalTo(self.bottomLine1);
-        make.right.mas_equalTo(self.bottomLine1);
-        make.height.mas_equalTo(50);
+        make.height.mas_equalTo(80/2);
     }];
     
     [self addBottomIMG];

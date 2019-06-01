@@ -44,7 +44,7 @@
     _doneButton = [[UIButton alloc] init];
     [_doneButton setTitle:@"确定" forState:UIControlStateNormal];
     _doneButton.titleLabel.font = [UIFont systemFontOfSize:16];
-    [_doneButton setTitleColor:[UIColor m_red] forState:UIControlStateNormal];
+    [_doneButton setTitleColor:kMainColor forState:UIControlStateNormal];
     [_doneButton addTarget:self action:@selector(doneButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [self.bgView addSubview:self.doneButton];
     

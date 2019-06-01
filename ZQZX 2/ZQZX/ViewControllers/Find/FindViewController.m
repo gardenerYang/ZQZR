@@ -70,9 +70,9 @@ static CGFloat const kWMMenuViewHeight = 60.0;
     
 //    _headImgView.layer.shadowOffset =  CGSizeMake(1,10);
 //    _headImgView.layer.shadowOpacity = 0.6;
-//    _headImgView.layer.shadowColor =  [UIColor m_Lightred].CGColor;
+//    _headImgView.layer.shadowColor =  kMainColor.CGColor;
     
-    self.titleColorSelected = [UIColor m_red];
+    self.titleColorSelected = kMainColor;
     self.titleColorNormal = [UIColor colorWithRed:0.4 green:0.8 blue:0.1 alpha:1.0];
     
    

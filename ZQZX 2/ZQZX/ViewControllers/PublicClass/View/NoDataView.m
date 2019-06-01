@@ -36,12 +36,12 @@
     
     _titleLb = [[UILabel alloc] init];
     _titleLb.font = [UIFont s14];
-    _titleLb.textColor = [UIColor m_textGrayColor];
+    _titleLb.textColor = kLightGray;
     [self addSubview:_titleLb];
     
     if (_type == NoDataTypeSelected) {
         _detailBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_detailBtn setTitleColor:[UIColor m_Lightred] forState:UIControlStateNormal];
+        [_detailBtn setTitleColor:kMainColor forState:UIControlStateNormal];
         [_detailBtn.titleLabel setFont:[UIFont s14]];
         [_detailBtn addTarget:self action:@selector(toEnter:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_detailBtn];

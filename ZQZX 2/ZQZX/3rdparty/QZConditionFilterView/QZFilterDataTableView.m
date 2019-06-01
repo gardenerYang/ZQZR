@@ -57,10 +57,10 @@
     }
     if (indexPath.row == _selectedIndex) {
         cell.markView.hidden = NO;
-        cell.textLabel.textColor = [UIColor m_Lightred];
+        cell.textLabel.textColor = kMainColor;
     }else{
         cell.markView.hidden = YES;
-        cell.textLabel.textColor = [UIColor m_textGrayColor];
+        cell.textLabel.textColor = kLightGray;
     }
     cell.textLabel.text = _dateArray[indexPath.row];
     cell.textLabel.font = [UIFont s16];

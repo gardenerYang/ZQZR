@@ -39,9 +39,9 @@
     
     _tagLb=[[UILabel alloc]init];
     _tagLb.font = [UIFont s12];
-    _tagLb.textColor=[UIColor m_red];
+    _tagLb.textColor=kMainColor;
     _tagLb.textAlignment=NSTextAlignmentCenter;
-    _tagLb.layer.borderColor = [UIColor m_red].CGColor;
+    _tagLb.layer.borderColor = kMainColor.CGColor;
     _tagLb.layer.borderWidth = 1;
     _tagLb.layer.masksToBounds = YES;
     _tagLb.layer.cornerRadius = 5;

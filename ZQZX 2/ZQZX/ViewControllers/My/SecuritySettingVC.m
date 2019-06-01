@@ -59,7 +59,7 @@
         ZHSwitch *switchView=[[ZHSwitch alloc]initWithFrame:CGRectMake(Iphonewidth-100, 10, 60, 40)];
         [switchView setOn:[GesturePwdManageService isSave] animated:NO];
         [switchView addTarget:self action:@selector(respondsToSwitchAction:) forControlEvents:UIControlEventValueChanged];
-        switchView.onTintColor = [UIColor m_red];
+        switchView.onTintColor = kMainColor;
         [cell addSubview:switchView];
     }
     else{

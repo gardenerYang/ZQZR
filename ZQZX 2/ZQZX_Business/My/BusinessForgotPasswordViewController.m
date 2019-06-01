@@ -59,7 +59,7 @@
     
     _getCodeButton = [RDCountDownButton buttonWithType:UIButtonTypeCustom];
     [_getCodeButton setTitle:@"获取验证码" forState:UIControlStateNormal];
-    [_getCodeButton setTitleColor:[UIColor m_textGrayColor] forState:UIControlStateNormal];
+    [_getCodeButton setTitleColor:kLightGray forState:UIControlStateNormal];
     _getCodeButton.titleLabel.font = [UIFont s14];
     _getCodeButton.layer.cornerRadius = 15.0;
     _getCodeButton.layer.borderColor = [UIColor m_textLighGrayColor].CGColor;
@@ -85,16 +85,17 @@
     [self.view addSubview:_bottomLine];
     
     _stateLb = [[UILabel alloc]init];
+    _stateLb.textColor = kLightGray;
     _stateLb.font = [UIFont s12];
     _stateLb.text = @"";
     [self.view addSubview:_stateLb];
     
     _nextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_nextBtn setTitle:@"下一步" forState:UIControlStateNormal];
-    [_nextBtn setTitleColor:[UIColor m_red] forState:UIControlStateNormal];
-    _nextBtn.titleLabel.font = [UIFont s20];
-    _nextBtn.layer.cornerRadius = 25.0;
-    _nextBtn.layer.borderColor = [UIColor m_Lightred].CGColor;
+    [_nextBtn setTitleColor:kMainColor forState:UIControlStateNormal];
+    _nextBtn.titleLabel.font = kF18;
+    _nextBtn.layer.cornerRadius = 80/4;
+    _nextBtn.layer.borderColor = kMainColor.CGColor;
     _nextBtn.layer.borderWidth = 1;
     [_nextBtn addAction:^(UIButton *sender) {
         
@@ -172,7 +173,7 @@
         make.top.mas_equalTo(self.stateLb.mas_bottom).offset(20);
         make.left.mas_equalTo(self.verificationField).offset(10);
         make.right.mas_equalTo(self.verificationField);
-        make.height.mas_equalTo(50);
+        make.height.mas_equalTo(80/2);
     }];
     
     [self addBottomIMG];
@@ -188,8 +189,8 @@
 {
     self.getCodeButton.enabled = NO;
     [self.getCodeButton startCountDownWithSecond:60];
-    [_getCodeButton setTitleColor:[UIColor m_red] forState:UIControlStateNormal];
-    _getCodeButton.layer.borderColor = [UIColor m_Lightred].CGColor;
+    [_getCodeButton setTitleColor:kMainColor forState:UIControlStateNormal];
+    _getCodeButton.layer.borderColor = kMainColor.CGColor;
     
     [self.getCodeButton countDownChanging:^NSString *(RDCountDownButton *countDownButton,NSUInteger second) {
         NSString *title = [NSString stringWithFormat:@"剩余%zd秒",second];
@@ -205,7 +206,7 @@
 -(void)getVerificationCode{
     
     [HttpRequest changeBusinessNewPhone:_phoneTextField.TextField.text Requestsuccess:^(HttpResponse * _Nonnull data, NSString * _Nonnull message) {
-        self.stateLb.text = [NSString stringWithFormat:@"已向%@发送短信",self.phoneTextField.TextField.text];
+        self.stateLb.text = [NSString stringWithFormat:@"已向%@发送短信",[NSString replaceStringWithString:self.phoneTextField.TextField.text Asterisk:3 length:6]];
         [self countDownMethod];
     } failure:^(NSError * _Nonnull error) {
         [MBProgressHUD showErrorMessage:error.localizedDescription];

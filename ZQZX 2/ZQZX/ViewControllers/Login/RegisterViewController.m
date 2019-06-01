@@ -45,8 +45,8 @@
     __weak typeof(self) wf = self;
 
     _srcLb = [[UILabel alloc]init];
-    _srcLb.text = @"欢迎加入永业通";
-    _srcLb.font = [UIFont boldSystemFontOfSize:22];
+    _srcLb.text = @"欢迎加入中企智信";
+    _srcLb.font = [UIFont boldSystemFontOfSize:30];
     _srcLb.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:_srcLb];
     
@@ -92,7 +92,7 @@
     _applyBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_applyBtn setTitle:@"申请理财师" forState:UIControlStateNormal];
     _applyBtn.titleLabel.font = [UIFont s16];
-    [_applyBtn setTitleColor:[UIColor m_Lightred] forState:UIControlStateNormal];
+    [_applyBtn setTitleColor:kMainColor forState:UIControlStateNormal];
     [_applyBtn addAction:^(UIButton *sender) {
         ApplyViewController *applyVC = [[ApplyViewController alloc]init];
         [wf.navigationController pushViewController:applyVC animated:YES];
@@ -106,7 +106,7 @@
     
     _getCodeButton = [RDCountDownButton buttonWithType:UIButtonTypeCustom];
     [_getCodeButton setTitle:@"获取验证码" forState:UIControlStateNormal];
-    [_getCodeButton setTitleColor:[UIColor m_textGrayColor] forState:UIControlStateNormal];
+    [_getCodeButton setTitleColor:kLightGray forState:UIControlStateNormal];
     _getCodeButton.titleLabel.font = [UIFont s14];
     _getCodeButton.layer.cornerRadius = 15.0;
     _getCodeButton.layer.borderColor = [UIColor m_textLighGrayColor].CGColor;
@@ -147,13 +147,13 @@
     _registerLabel = [[UILabel alloc] init];
     _registerLabel.textAlignment = NSTextAlignmentLeft;
     _registerLabel.font = [UIFont s14];
-    _registerLabel.textColor=[UIColor m_textGrayColor];
+    _registerLabel.textColor=kLightGray;
     
-    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"我已经阅读并同意《用户注册协议》"];
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"我已经阅读并同意《中企智信用户协议》"];
     NSRange range1 = [[str string] rangeOfString:@"我已经阅读并同意"];
-    [str addAttribute:NSForegroundColorAttributeName value:[UIColor m_textGrayColor] range:range1];
-    NSRange range2 = [[str string] rangeOfString:@"《用户注册协议》"];
-    [str addAttribute:NSForegroundColorAttributeName value:[UIColor m_blue] range:range2];
+    [str addAttribute:NSForegroundColorAttributeName value:kLightGray range:range1];
+    NSRange range2 = [[str string] rangeOfString:@"《中企智信用户协议》"];
+    [str addAttribute:NSForegroundColorAttributeName value:kMainColor range:range2];
     _registerLabel.attributedText=str;
     UITapGestureRecognizer* singleRecognizer1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(SingleTap:)];
     singleRecognizer1.numberOfTapsRequired = 1;// 单击
@@ -164,13 +164,10 @@
     
     _nextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_nextBtn setTitle:@"下一步" forState:UIControlStateNormal];
-    _nextBtn.backgroundColor = [UIColor m_Lightred];
-    _nextBtn.titleLabel.font = [UIFont s20];
-    _nextBtn.layer.cornerRadius = 25.0;
+    _nextBtn.backgroundColor = kMainColor;
+    _nextBtn.titleLabel.font = kF18;
+    _nextBtn.layer.cornerRadius = 80/4;
     [_nextBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    _nextBtn.layer.shadowOffset =  CGSizeMake(1,10);
-    _nextBtn.layer.shadowOpacity = 0.6;
-    _nextBtn.layer.shadowColor =  [UIColor m_Lightred].CGColor;
     [_nextBtn addTarget:self action:@selector(netBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_nextBtn];
     
@@ -257,7 +254,7 @@
     [self.nextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.registerLabel.mas_bottom).offset(20);
         make.right.mas_equalTo(self.topLine);
-        make.height.mas_equalTo(50);
+        make.height.mas_equalTo(80/2);
         make.left.mas_equalTo(self.topLine);
     }];
     [self addBottomIMG];
@@ -330,8 +327,8 @@
 {
         self.getCodeButton.enabled = NO;
         [self.getCodeButton startCountDownWithSecond:60];
-        [_getCodeButton setTitleColor:[UIColor m_red] forState:UIControlStateNormal];
-        _getCodeButton.layer.borderColor = [UIColor m_Lightred].CGColor;
+        [_getCodeButton setTitleColor:kMainColor forState:UIControlStateNormal];
+        _getCodeButton.layer.borderColor = kMainColor.CGColor;
         
         [self.getCodeButton countDownChanging:^NSString *(RDCountDownButton *countDownButton,NSUInteger second) {
             NSString *title = [NSString stringWithFormat:@"剩余%zd秒",second];

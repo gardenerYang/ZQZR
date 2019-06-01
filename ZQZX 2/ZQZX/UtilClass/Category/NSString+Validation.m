@@ -227,4 +227,11 @@
     
     return 0;
 }
++ (NSString *)replaceStringWithString:(NSString*)string Asterisk:(NSInteger)startLocation length:(NSInteger)length {
+    for (NSInteger i = 0; i < length; i++) {
+        NSRange range = NSMakeRange(startLocation, 1);
+        string = [string stringByReplacingCharactersInRange:range withString:@"*"]; startLocation ++;
+    }
+    return string;
+}
 @end

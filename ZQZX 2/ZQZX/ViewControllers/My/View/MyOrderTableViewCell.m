@@ -33,7 +33,7 @@
     
     _timeLb=[[UILabel alloc]init];
     _timeLb.font = [UIFont s14];
-    _timeLb.textColor=[UIColor m_textGrayColor];
+    _timeLb.textColor=kLightGray;
     _timeLb.textAlignment=NSTextAlignmentRight;
     [self.BKView addSubview:_timeLb];
     
@@ -50,9 +50,9 @@
     
     _tagLb=[[UILabel alloc]init];
     _tagLb.font = [UIFont s12];
-    _tagLb.textColor=[UIColor m_red];
+    _tagLb.textColor=kMainColor;
     _tagLb.textAlignment=NSTextAlignmentCenter;
-    _tagLb.layer.borderColor = [UIColor m_red].CGColor;
+    _tagLb.layer.borderColor = kMainColor.CGColor;
     _tagLb.layer.borderWidth = 1;
     _tagLb.layer.masksToBounds = YES;
     _tagLb.layer.cornerRadius = 5;

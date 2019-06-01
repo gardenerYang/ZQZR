@@ -61,8 +61,8 @@ self.tableView.tableFooterView = [UIView new];
     
     _lineChartView.xAxis.labelPosition = XAxisLabelPositionBottom;//X轴的显示位置，默认是显示在上面的
     _lineChartView.noDataText = @"暂无数据";
-    _lineChartView.leftAxis.labelTextColor = [UIColor m_red];//左边y轴颜色
-    _lineChartView.rightAxis.labelTextColor = [UIColor m_blue];//右边y轴颜色
+    _lineChartView.leftAxis.labelTextColor = kMainColor;//左边y轴颜色
+    _lineChartView.rightAxis.labelTextColor = kMainColor;//右边y轴颜色
     _lineChartView.rightAxis.enabled = NO;
     
      ChartYAxis *leftAxis =_lineChartView.leftAxis;
@@ -136,8 +136,8 @@ self.tableView.tableFooterView = [UIView new];
 //第一根第二条线
     
     LineChartDataSet *set2 = [[LineChartDataSet alloc]initWithValues:values1 label:@"累计投资"];
-    [set2 setCircleColor:[UIColor m_Lightred]];
-    set2.colors =[NSArray arrayWithObjects:[UIColor m_Lightred], nil];
+    [set2 setCircleColor:kMainColor];
+    set2.colors =[NSArray arrayWithObjects:kMainColor, nil];
     set2.mode = LineChartModeHorizontalBezier;
     set2.axisDependency = AxisDependencyLeft;
     
@@ -145,7 +145,7 @@ self.tableView.tableFooterView = [UIView new];
     //第二根线设置区域颜色
 //    NSArray *gradientColors1 = @[
 //                                (id)[UIColor withHexStr:@"#fef5f0"].CGColor,
-//                                (id)[UIColor m_Lightred].CGColor
+//                                (id)kMainColor.CGColor
 //                                ];
 //    CGGradientRef gradient1 = CGGradientCreateWithColors(nil, (CFArrayRef)gradientColors1, nil);
 //

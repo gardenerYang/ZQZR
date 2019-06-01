@@ -28,8 +28,8 @@
     _backgroundGradient = [CAGradientLayer layer];
     
     
-    UIColor *startColor = [UIColor m_red];
-    UIColor *endColor = [UIColor m_blue];
+    UIColor *startColor = kMainColor;
+    UIColor *endColor = kMainColor;
     
     _backgroundGradient.colors = @[(__bridge id)startColor.CGColor,(__bridge id)endColor.CGColor];
     _backgroundGradient.startPoint = CGPointMake(0, 1);

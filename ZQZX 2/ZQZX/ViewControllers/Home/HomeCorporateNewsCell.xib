@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDz-Nb-HDM">
-                        <rect key="frame" x="15" y="15" width="410" height="134.5"/>
+                        <rect key="frame" x="15" y="0.0" width="410" height="159.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tongzhi" translatesAutoresizingMaskIntoConstraints="NO" id="GDE-mu-Me6">
                                 <rect key="frame" x="15" y="20" width="14" height="14"/>
@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vPG-Jt-gp7">
-                                <rect key="frame" x="15" y="55.5" width="380" height="59"/>
+                                <rect key="frame" x="15" y="55.5" width="380" height="84"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new" translatesAutoresizingMaskIntoConstraints="NO" id="8dE-Th-V87">
                                 <rect key="frame" x="348" y="55.5" width="47" height="24"/>
@@ -74,12 +74,16 @@
                 <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="aDz-Nb-HDM" secondAttribute="trailing" constant="15" id="7Cm-NW-1fu"/>
-                    <constraint firstItem="aDz-Nb-HDM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ONd-Qb-Nna"/>
-                    <constraint firstAttribute="bottom" secondItem="aDz-Nb-HDM" secondAttribute="bottom" constant="10" id="Rf5-nD-3Ad"/>
+                    <constraint firstItem="aDz-Nb-HDM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ONd-Qb-Nna"/>
+                    <constraint firstAttribute="bottom" secondItem="aDz-Nb-HDM" secondAttribute="bottom" id="Rf5-nD-3Ad"/>
                     <constraint firstItem="aDz-Nb-HDM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="lGc-RI-HGf"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="news_image" destination="vPG-Jt-gp7" id="JY3-dc-zPC"/>
+                <outlet property="news_title" destination="jWL-OJ-Vxh" id="i9b-gR-EFa"/>
+            </connections>
             <point key="canvasLocation" x="-248" y="79.160419790104953"/>
         </tableViewCell>
     </objects>

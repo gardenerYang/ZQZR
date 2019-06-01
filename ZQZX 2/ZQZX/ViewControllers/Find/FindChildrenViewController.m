@@ -45,13 +45,10 @@
     }];
         [self.tableView refresh];
 }
--(void)requestList
-{
+-(void)requestList{
     __weak typeof(self) wf = self;
-    
-    [HttpRequest getFindDataPageNum:_page type:_type Requestsuccess:^(FindModel * _Nonnull findMode, NSString * _Nonnull message) {
+    [HttpRequest getFindDataPageNum:_page type:_type home:@"" Requestsuccess:^(FindModel * _Nonnull findMode, NSString * _Nonnull message) {
         [wf.tableView stopReload];
-
         if (self.page * 10 >= findMode.total) {
             [wf.tableView noMoreData];
         }else{
@@ -73,10 +70,7 @@
     } failure:^(NSError * _Nonnull error) {
         [wf.tableView stopReload];
         [MBProgressHUD showErrorMessage:error.localizedDescription];
-
     }];
-    
-  
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     

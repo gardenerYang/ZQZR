@@ -31,7 +31,7 @@
 
        _leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_leftBtn setTitle:@"" forState:UIControlStateNormal];
-        _leftBtn.layer.borderColor = [UIColor m_Lightred].CGColor;
+        _leftBtn.layer.borderColor = kMainColor.CGColor;
         _leftBtn.layer.borderWidth = 1;
         _leftBtn.titleLabel.font = [UIFont s14];
         [self addSubview:_leftBtn];
@@ -45,15 +45,15 @@
         }];
     
     _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _rightBtn.layer.borderColor = [UIColor m_Lightred].CGColor;
+    _rightBtn.layer.borderColor = kMainColor.CGColor;
     _rightBtn.layer.borderWidth = 1;
     _rightBtn.titleLabel.font = [UIFont s14];
     
     [self addSubview:_rightBtn];
-    wf.leftBtn.backgroundColor = [UIColor m_Lightred];
+    wf.leftBtn.backgroundColor = kMainColor;
     [wf.leftBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     wf.rightBtn.backgroundColor = [UIColor whiteColor];
-    [wf.rightBtn setTitleColor:[UIColor m_Lightred] forState:UIControlStateNormal];
+    [wf.rightBtn setTitleColor:kMainColor forState:UIControlStateNormal];
     
     [_rightBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.leftBtn);
@@ -64,19 +64,19 @@
     _leftBtn.selected = YES;
     _rightBtn.selected = NO;
     [_leftBtn addAction:^(UIButton *sender) {
-        wf.leftBtn.backgroundColor = [UIColor m_Lightred];
+        wf.leftBtn.backgroundColor = kMainColor;
         [wf.leftBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         wf.rightBtn.backgroundColor = [UIColor whiteColor];
-        [wf.rightBtn setTitleColor:[UIColor m_Lightred] forState:UIControlStateNormal];
+        [wf.rightBtn setTitleColor:kMainColor forState:UIControlStateNormal];
         if (wf.tapLeftBtnblock) {
             wf.tapLeftBtnblock();
         }
     }];
     [_rightBtn addAction:^(UIButton *sender) {
-        wf.rightBtn.backgroundColor = [UIColor m_Lightred];
+        wf.rightBtn.backgroundColor = kMainColor;
         [wf.rightBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         wf.leftBtn.backgroundColor = [UIColor whiteColor];
-        [wf.leftBtn setTitleColor:[UIColor m_Lightred] forState:UIControlStateNormal];
+        [wf.leftBtn setTitleColor:kMainColor forState:UIControlStateNormal];
         if (wf.tapRightBtnblock) {
             wf.tapRightBtnblock();
         }

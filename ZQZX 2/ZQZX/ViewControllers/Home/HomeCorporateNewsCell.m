@@ -12,13 +12,12 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    self.selectionStyle = NO;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)setModel:(ListItem *)model{
+    self.news_title.text = model.title;
+    [self.news_image sd_setImageWithURL:kURL(model.imageUrl) placeholderImage:kNewsPlaceholderImage];
 }
 
 @end

@@ -66,15 +66,51 @@
 #define kTitleColor       [UIColor withHexStr:@"181818"]
 #define kSubtitleColor    [UIColor withHexStr:@"353535"]
 #define kLightGray        [UIColor withHexStr:@"888888"]
-#define kOrangeColor      [UIColor withHexStr:@"F18C09"]
 #define kMainColor        [UIColor withHexStr:@"cea470"]
 #define kF8               kFont(8)
 #define kF10               kFont(10)
 #define kF12               kFont(12)
 #define kF14               kFont(14)
 #define kF16               kFont(16)
-#define kF16               kFont(18)
+#define kF18               kFont(18)
+#define kNewsPlaceholderImage kImageNamed(@"newWload")
+#define kBannerPlaceholderImage kImageNamed(@"newWload")
 
+//enmu
+
+
+// strong weak
+#ifndef weakify
+#if DEBUG
+#if __has_feature(objc_arc)
+#define weakify(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
+#else
+#define weakify(object) autoreleasepool{} __block __typeof__(object) block##_##object = object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define weakify(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
+#else
+#define weakify(object) try{} @finally{} {} __block __typeof__(object) block##_##object = object;
+#endif
+#endif
+#endif
+
+#ifndef strongify
+#if DEBUG
+#if __has_feature(objc_arc)
+#define strongify(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
+#else
+#define strongify(object) autoreleasepool{} __typeof__(object) object = block##_##object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define strongify(object) try{} @finally{} __typeof__(object) object = weak##_##object;
+#else
+#define strongify(object) try{} @finally{} __typeof__(object) object = block##_##object;
+#endif
+#endif
+#endif
 
 #endif
 

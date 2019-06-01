@@ -25,7 +25,7 @@
     [self addSubview:_titleLb];
     
     _photoImg = [[UIImageView alloc]init];
-    _photoImg.backgroundColor =[UIColor m_red];
+    _photoImg.backgroundColor =kMainColor;
     _photoImg.layer.masksToBounds = YES;
     _photoImg.layer.cornerRadius = 20;
     [self addSubview:_photoImg];

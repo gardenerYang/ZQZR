@@ -62,7 +62,7 @@
         
         _moveLineLayer = [CALayer layer];
         _moveLineLayer.bounds = CGRectMake(0, 0, 40, 2);
-        _moveLineLayer.backgroundColor = [UIColor m_red].CGColor;
+        _moveLineLayer.backgroundColor = kMainColor.CGColor;
     }
     return _moveLineLayer;
 }
@@ -114,7 +114,7 @@
     
     [self.lastBtn setTitleColor:self.defaultColor?:kTitleColor forState:UIControlStateNormal];
     
-    [btn setTitleColor:self.selectedColor?:[UIColor m_red] forState:UIControlStateNormal];
+    [btn setTitleColor:self.selectedColor?:kMainColor forState:UIControlStateNormal];
     self.lastBtn = btn;
     
     

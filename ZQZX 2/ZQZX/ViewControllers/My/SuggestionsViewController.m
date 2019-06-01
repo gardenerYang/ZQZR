@@ -29,7 +29,7 @@
     [self.view addSubview:self.textView];
     
     UIButton *quitBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [quitBtn setBackgroundColor:[UIColor m_red]];
+    [quitBtn setBackgroundColor:kMainColor];
     [quitBtn setTitle:@"提交" forState:UIControlStateNormal];
     quitBtn.layer.masksToBounds = YES;
     quitBtn.layer.cornerRadius = 30;

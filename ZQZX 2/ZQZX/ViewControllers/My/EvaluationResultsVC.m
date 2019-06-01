@@ -41,13 +41,13 @@
     [self setCustomerTitle:@"风险评测结果"];
     self.view.backgroundColor = kTabBGColor;
     self.starView.starColor = [UIColor whiteColor];
-    self.starView.starBorderColor = [UIColor m_red];
+    self.starView.starBorderColor = kMainColor;
     self.starView.starBorderWidth = 1;
-    self.starView.starPlaceHolderBorderColor = [UIColor m_red];
+    self.starView.starPlaceHolderBorderColor = kMainColor;
     self.starView.starPlaceHolderBorderWidth = 1;
     self.starView.type  = LCStarRatingViewCountingTypeFloat;
     self.starView.progress = 5 - (self.model.score.floatValue/20);
-    self.starView.starPlaceHolderColor = [UIColor m_red];
+    self.starView.starPlaceHolderColor = kMainColor;
     
     self.typeLab.text = self.model.clientType;
     self.scoreLab.text = [NSString stringWithFormat:@"%@分",self.model.score];
@@ -56,7 +56,7 @@
     NSString * typeString = array.lastObject;
     NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:self.model.tips];
     NSRange range1 = [[str string] rangeOfString:typeString];
-    [str addAttribute:NSForegroundColorAttributeName value:[UIColor m_red] range:range1];
+    [str addAttribute:NSForegroundColorAttributeName value:kMainColor range:range1];
     self.resultsLab.attributedText = str;
     [self.doneBtn addTapGestureBlock:^(UIView *view) {
         [self.navigationController popToRootViewControllerAnimated:NO];

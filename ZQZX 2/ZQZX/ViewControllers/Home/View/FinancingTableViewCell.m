@@ -32,7 +32,7 @@
     _stateLb.font = [UIFont s12];
     _stateLb.textColor=[UIColor whiteColor];
     _stateLb.textAlignment=NSTextAlignmentCenter;
-    _stateLb.backgroundColor = [UIColor m_Lightred];
+    _stateLb.backgroundColor = kMainColor;
     [_BKView addSubview:_stateLb];
     
     _numLb=[[UILabel alloc]init];
@@ -43,7 +43,7 @@
     
     _srcnumLb=[[UILabel alloc]init];
     _srcnumLb.font = [UIFont s12];
-    _srcnumLb.textColor=[UIColor m_textGrayColor];
+    _srcnumLb.textColor=kLightGray;
     _srcnumLb.textAlignment=NSTextAlignmentCenter;
     [_BKView addSubview:_srcnumLb];
     
@@ -55,7 +55,7 @@
     
     _srcdayLb=[[UILabel alloc]init];
     _srcdayLb.font = [UIFont s12];
-    _srcdayLb.textColor=[UIColor m_textGrayColor];
+    _srcdayLb.textColor=kLightGray;
     _srcdayLb.textAlignment=NSTextAlignmentCenter;
     _stateLb.layer.masksToBounds = YES;
     _stateLb.layer.cornerRadius = 2;
@@ -75,7 +75,7 @@
     
     _srcmoneyLb=[[UILabel alloc]init];
     _srcmoneyLb.font = [UIFont s12];
-    _srcmoneyLb.textColor=[UIColor m_textGrayColor];
+    _srcmoneyLb.textColor=kLightGray;
     _srcmoneyLb.textAlignment=NSTextAlignmentCenter;
     [_BKView addSubview:_srcmoneyLb];
     

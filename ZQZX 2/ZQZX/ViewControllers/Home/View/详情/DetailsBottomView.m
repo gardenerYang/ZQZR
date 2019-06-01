@@ -52,14 +52,14 @@
     [_bottomView addSubview:_numberButton];
     
     _appointmentBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_appointmentBtn setBackgroundColor:[UIColor m_red]];
+    [_appointmentBtn setBackgroundColor:kMainColor];
     [_appointmentBtn setTitle:@"立即预约" forState:UIControlStateNormal];
     _appointmentBtn.titleLabel.font = [UIFont s16];
 //    _appointmentBtn.layer.masksToBounds = YES;
     _appointmentBtn.layer.cornerRadius = 15;
     _appointmentBtn.layer.shadowOffset = CGSizeMake(1,4);
     _appointmentBtn.layer.shadowOpacity = 0.6;
-    _appointmentBtn.layer.shadowColor =  [UIColor m_Lightred].CGColor;
+    _appointmentBtn.layer.shadowColor =  kMainColor.CGColor;
     __weak typeof(self) wf = self;
     [_appointmentBtn addAction:^(UIButton *sender) {
         if (wf.appointmentBlock) {

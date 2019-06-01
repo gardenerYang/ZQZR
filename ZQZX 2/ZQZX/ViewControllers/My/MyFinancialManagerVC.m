@@ -86,7 +86,7 @@
     [tellBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.cityView.mas_bottom).offset(30);
         make.left.mas_equalTo(self.nameView);
-        make.height.mas_equalTo(50);
+        make.height.mas_equalTo(80/2);
         make.right.mas_equalTo(self.nameView);
     }];
     

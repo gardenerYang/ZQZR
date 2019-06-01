@@ -61,9 +61,9 @@
     _confirmBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_confirmBtn setTitle:@"提交" forState:UIControlStateNormal];
     [_confirmBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    _confirmBtn.titleLabel.font = [UIFont s20];
-    _confirmBtn.layer.cornerRadius = 25.0;
-    _confirmBtn.backgroundColor = [UIColor m_red];
+    _confirmBtn.titleLabel.font = kF18;
+    _confirmBtn.layer.cornerRadius = 80/4;
+    _confirmBtn.backgroundColor = kMainColor;
     [_confirmBtn addAction:^(UIButton *sender) {
         
         if (wf.nameTextField.TextField.text.length <= 0 ) {
@@ -93,7 +93,7 @@
                 successVC.titleLbText = @"认证失败";
                 successVC.srcLbText = error.localizedDescription;
                 successVC.btnTitle = @"返回";
-                successVC.btnBgColor = [UIColor m_blue];
+                successVC.btnBgColor = kMainColor;
                 successVC.imgName = @"err";
                 [successVC setTapBtnblock:^{
                     [successVC dismiss];
@@ -138,7 +138,7 @@
         make.top.mas_equalTo(self.bottomLine.mas_bottom).offset(20);
         make.left.mas_equalTo(self.cardTextField).offset(10);
         make.right.mas_equalTo(self.cardTextField);
-        make.height.mas_equalTo(50);
+        make.height.mas_equalTo(80/2);
     }];
     
 }

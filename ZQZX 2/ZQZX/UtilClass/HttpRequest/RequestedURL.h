@@ -50,8 +50,6 @@
 #define activity_intoActivity @"activity/intoActivity"//参加活动
 #define home_remindUserOrFinancialPlanner @"home/remindUserOrFinancialPlanner"//续投提醒
 #define my_insertInvestmentApplyFor @"my/insertInvestmentApplyFor"//提交续投
-
-
 /*发现*/
 #define find_getMomentByParam  @"moment/getMomentByParam"//发现
 

@@ -103,7 +103,7 @@
     _forgetBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_forgetBtn setTitle:@"忘记密码" forState:UIControlStateNormal];
     _forgetBtn.titleLabel.font = [UIFont s16];
-    [_forgetBtn setTitleColor:[UIColor m_textGrayColor] forState:UIControlStateNormal];
+    [_forgetBtn setTitleColor:kLightGray forState:UIControlStateNormal];
     [_forgetBtn addAction:^(UIButton *sender) {
         
         
@@ -126,13 +126,10 @@
     
     _loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_loginBtn setTitle:@"登录" forState:UIControlStateNormal];
-    _loginBtn.backgroundColor = [UIColor m_Lightred];
-    _loginBtn.titleLabel.font = [UIFont s20];
-    _loginBtn.layer.cornerRadius = 25.0;
+    _loginBtn.backgroundColor = kMainColor;
+    _loginBtn.titleLabel.font = kF18;
+    _loginBtn.layer.cornerRadius = 80/4;
     [_loginBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    _loginBtn.layer.shadowOffset =  CGSizeMake(1,10);
-    _loginBtn.layer.shadowOpacity = 0.6;
-    _loginBtn.layer.shadowColor =  [UIColor m_Lightred].CGColor;
     [_loginBtn addTarget:self action:@selector(gotoLoginClick) forControlEvents:UIControlEventTouchUpInside];
  
     [self.view addSubview:_loginBtn];
@@ -144,13 +141,13 @@
     _registerLabel = [[UILabel alloc] init];
     _registerLabel.textAlignment = NSTextAlignmentCenter;
     _registerLabel.font = [UIFont s14];
-    _registerLabel.textColor=[UIColor m_textGrayColor];
+    _registerLabel.textColor=kLightGray;
 
     NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"还没有注册会员？立即注册"];
     NSRange range1 = [[str string] rangeOfString:@"还没有注册会员？"];
-    [str addAttribute:NSForegroundColorAttributeName value:[UIColor m_textGrayColor] range:range1];
+    [str addAttribute:NSForegroundColorAttributeName value:kLightGray range:range1];
     NSRange range2 = [[str string] rangeOfString:@"立即注册"];
-    [str addAttribute:NSForegroundColorAttributeName value:[UIColor m_Lightred] range:range2];
+    [str addAttribute:NSForegroundColorAttributeName value:kMainColor range:range2];
     _registerLabel.attributedText=str;
     UITapGestureRecognizer* singleRecognizer1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(SingleTap:)];
     singleRecognizer1.numberOfTapsRequired = 1;// 单击
@@ -160,7 +157,7 @@
     #endif
     [self.logoImg mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(60);
-        make.size.mas_equalTo(CGSizeMake(80, 80));
+        make.size.mas_equalTo(CGSizeMake(167/2, 154/2));
         make.centerX.mas_equalTo(self.view.mas_centerX);
     }];
     [self.phoneTextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -201,7 +198,7 @@
     [self.loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.forgetBtn.mas_bottom).offset(10);
         make.right.mas_equalTo(self.bottomLine);
-        make.height.mas_equalTo(50);
+        make.height.mas_equalTo(80/2);
         make.left.mas_equalTo(self.bottomLine);
     }];
 #if BusinessTag

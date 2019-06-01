@@ -39,7 +39,7 @@
      [_navView addSubview:_photoImg];
     
     _nameLb=[[UILabel alloc]init];
-    _nameLb.font = [UIFont s20];
+    _nameLb.font = kF18;
     _nameLb.textColor=[UIColor m_textDeepGrayColor];
     _nameLb.textAlignment=NSTextAlignmentLeft;
     [_navView addSubview:_nameLb];

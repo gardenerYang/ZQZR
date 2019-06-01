@@ -323,7 +323,7 @@
     CGFloat edgeSpace = (btn.width-(titleSize.width+image.size.width+space))+titleSize.width+space;
     
     // 90 - 60
-    // 78 - 50
+    // 80 - 50
     CGFloat edge = -edgeSpace;
 //    if (titleSize.width > 4*[UIFont convertFontSize:13.0]) {
 //        edge = -edgeSpace-titleSize.width/1.5;
