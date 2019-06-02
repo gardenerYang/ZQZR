@@ -29,8 +29,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic , assign) CGFloat              reservationAmount;
 @property (nonatomic , assign) CGFloat              proTotalAmount;
 @property (nonatomic , assign) CGFloat              actualTotalAmount;
-
 @property (nonatomic,  copy) NSString * remainingCollectionTime;
+@property (nonatomic , assign) CGFloat              addTime;
+@property (nonatomic,  copy) NSString * alias;
+@property (nonatomic , assign) CGFloat              collectionTime;
+@property (nonatomic , assign) CGFloat              cumulativeAmount;
+@property (nonatomic,  copy) NSString * imageUrl;
+@property (nonatomic,  copy) NSString * introduction;
 
 //reservationAmount（可预约金额）和proTotalAmount（总额）
 @end

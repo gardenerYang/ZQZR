@@ -17,6 +17,7 @@
 #import "HttpRequest+Active.h"
 #import "HttpRequest+Home.h"
 #import "ActivityListCell.h"
+#import "FindChildrenViewController.h"
 @interface FindHomeVC ()<MSCycleScrollViewDelegate>
 @property (nonatomic,strong)NSMutableArray * dataArray;
 @property (nonatomic,strong)NSArray * bannerArray;
@@ -31,11 +32,16 @@
     [super viewDidLoad];
     self.dataArray = [NSMutableArray array];
     [self setCustomerTitle:@"发现"];
-    [self requestBannerData];
-    [self requestList];
     [self createUI];
 }
 - (void)createUI{
+    @weakify(self);
+    [self.tableView addMJ_Header:^{
+        @strongify(self);
+        [self requestBannerData];
+        [self requestList];
+    }];
+    [self.tableView refresh];
     [self.tableView registerNib:[UINib nibWithNibName:@"ActivityListCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"ActivityListCell"];
     [self.tableView registerClass:[HomeButtonTableViewCell class] forCellReuseIdentifier:@"HomeButtonTableViewCell"];
     
@@ -52,6 +58,7 @@
     __weak typeof(self) wf = self;
     [HttpRequest getActiveDataRequestsuccess:^(NSArray * _Nonnull dataArr, NSString * _Nonnull message) {
         [wf.tableView stopReload];
+        [self.dataArray removeAllObjects];
         [self.dataArray addObjectsFromArray:dataArr];
         [wf.tableView reloadData];
     } failure:^(NSError * _Nonnull error) {
@@ -107,6 +114,16 @@
                 cell = [[ProductModuleCell alloc]initWithReuseIdentifier:@"ProductModuleCell" imageArray:@[@"news_company",@"news_industry"]];
                 cell.backgroundColor = kTabBGColor;
             }
+            [cell.leftImageV addTapGestureBlock:^(UIView *view) {
+                FindChildrenViewController *vc = [[FindChildrenViewController alloc] init:@"2"];
+                [self.navigationController pushViewController:vc animated:YES];
+
+            }];
+            [cell.rightImageV addTapGestureBlock:^(UIView *view) {
+                FindChildrenViewController *vc = [[FindChildrenViewController alloc] init:@"1"];
+                [self.navigationController pushViewController:vc animated:YES];
+
+            }];
             return cell;
         }else{
             ProductCommendCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ProductCommendCell"];

@@ -75,6 +75,8 @@
 #define kF18               kFont(18)
 #define kNewsPlaceholderImage kImageNamed(@"newWload")
 #define kBannerPlaceholderImage kImageNamed(@"newWload")
+#define kStauBarHeiht [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kNaviBarHeight   (44+kStauBarHeiht)
 
 //enmu
 

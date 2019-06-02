@@ -12,7 +12,7 @@
 #import "AppUserProfile.h"
 #import "SetGesturePwdVC.h"
 #import <Bugly/Bugly.h>
-#import "YSSafeFramework.h"
+//#import "YSSafeFramework.h"
 @interface AppDelegate ()<BuglyDelegate>
 @property(nonatomic, strong) ZHTabBarViewController *mainController;
 @property(nonatomic, strong) SetGesturePwdVC *gesturePwdVC;

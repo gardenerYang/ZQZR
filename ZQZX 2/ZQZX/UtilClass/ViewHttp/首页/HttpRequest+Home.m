@@ -49,7 +49,6 @@
 }
 +(void)getHomeListPageNum:(NSInteger )pageNum type:(NSString *)type Requestsuccess:(void (^)(HomeListModel *model ,NSString *message))success  failure:(void (^)(NSError *error))failure{
     NSDictionary *paramDic = @{ @"type": type , @"pageNum": @(pageNum).stringValue , @"pageSize": @"10" , @"duration": @"0"};
-
     [HttpRequest post:home_getHomeProductsByParam param:paramDic success:^(HttpResponse *data,NSString *message) {
         HomeListModel *model = [HomeListModel mj_objectWithKeyValues:data.data];
         if (success) {

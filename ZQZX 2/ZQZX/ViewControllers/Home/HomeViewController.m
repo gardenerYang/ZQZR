@@ -33,6 +33,7 @@
 #import "HomeVersionCell.h"
 #import "HttpRequest+Find.h"
 #import "MSExampleDotView.h"
+#import "ProductListHomeVC.h"
 @interface HomeViewController ()<MSCycleScrollViewDelegate,ZJJTimeCountDownDelegate>
 @property (nonatomic, strong) MSCycleScrollView          *carouselView;
 @property (nonatomic, strong) HomeModel          *homeModel;
@@ -76,6 +77,7 @@
     [super viewDidLoad];
     self.timeListArr = [NSMutableArray array];
     [self initUI];
+    [self getImgData];//获取图片数据
     _imgArr = [[NSArray alloc]init];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(loginDidSuccess) name:@"loginDidSuccess" object:nil];
     [self getHomeRemindUserOrFinancialPlannersuccess];
@@ -264,10 +266,7 @@
                 vc.url = @"https://rich.qyrich.com/index?channelNo=zqzr&organ=02200001";
                 [self.navigationController pushViewController:vc animated:YES];
             }else if (selectClick == 0) {
-                HomeListViewController *homeListVC = [[HomeListViewController alloc]init];
-                [homeListVC setCustomerTitle:title];
-                homeListVC.type1 = @"0";
-                homeListVC.type2 = @"4";
+                ProductListHomeVC *homeListVC = [[ProductListHomeVC alloc]init];
                 [wf.navigationController pushViewController:homeListVC animated:YES];
             }
            

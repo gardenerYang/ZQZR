@@ -61,8 +61,7 @@
     }];
     [self.tableView refresh];
 }
--(void)requestList
-{
+-(void)requestList{
     __weak typeof(self) wf = self;
     [HttpRequest getHomeListPageNum:_page type:_productType Requestsuccess:^(HomeListModel * _Nonnull model, NSString * _Nonnull message) {
         [wf.tableView stopReload];
@@ -97,7 +96,6 @@
         [wf.tableView stopReload];
         [MBProgressHUD showErrorMessage:error.localizedDescription];
     }];
-    
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     

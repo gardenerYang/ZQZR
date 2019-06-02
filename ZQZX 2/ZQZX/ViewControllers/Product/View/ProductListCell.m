@@ -16,12 +16,15 @@
     self.backgroundColor = kTabBGColor;
     self.imageV.layer.masksToBounds = YES;
     self.imageV.layer.cornerRadius = 5.0f;
+    self.moneyLabel.textColor = kMainColor;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+-(void)setModel:(CListItem *)model{
+    [self.imageV sd_setImageWithURL:kURL(model.imageUrl) placeholderImage:kNewsPlaceholderImage];
+    self.prodeuctName.text = model.name;
+    self.productTitle.text = model.introduction;
+    CGFloat per = (model.actualTotalAmount-model.reservationAmount)/model.proTotalAmount;
+    NSString * perString = @"%";
+    self.moneyLabel.text = [NSString stringWithFormat:@"%.f%@",per*100,perString];
 }
-
 @end
